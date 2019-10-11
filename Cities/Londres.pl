@@ -2,99 +2,98 @@
 %Campsite Hook Farm
 %Hotel Seven Sisters
 %Accommodation
-hotel(the_savoy, true).
-hotel(seven_sisters, true).
-bed_and_breakfast(the_savoy, true).
-campsite(hook_farm, true).
+hotel('The Savoy', true).
+hotel('Seven Sisters', true).
+campsite('Hook Farm', true).
 
 %AccommodationRating
-one_s(the_savoy, false).
-one_s(hook_farm, false).
-one_s(seven_sisters, false).
-two_s(the_savoy, false).
-two_s(hook_farm, false).
-two_s(seven_sisters, true).
-three_s(the_savoy, false).
-three_s(hook_farm, true).
-three_s(seven_sisters, false).
-four_s(the_savoy, false).
-four_s(hook_farm, false).
-four_s(seven_sisters, false).
-five_s(the_savoy, true).
-five_s(hook_farm, false).
-five_s(seven_sisters, false).
+one_s('The Savoy', false).
+one_s('Hook Farm', false).
+one_s('Seven Sisters', false).
+two_s('The Savoy', false).
+two_s('Hook Farm', false).
+two_s('Seven Sisters', true).
+three_s('The Savoy', false).
+three_s('Hook Farm', true).
+three_s('Seven Sisters', false).
+four_s('The Savoy', false).
+four_s('Hook Farm', false).
+four_s('Seven Sisters', false).
+five_s('The Savoy', true).
+five_s('Hook Farm', false).
+five_s('Seven Sisters', false).
 
 
 %Activity
 
 %Adventure
-bunjee_jumping(the_savoy, false).
-bunjee_jumping(seven_sisters, false).
-bunjee_jumping(hook_farm, false).
-adv_safari(the_savoy, false).
-adv_safari(hook_farm, false).
-adv_safari(seven_sisters, false).
+bunjee_jumping('The Savoy', false).
+bunjee_jumping('Seven Sisters', false).
+bunjee_jumping('Hook Farm', false).
+adv_safari('The Savoy', false).
+adv_safari('Hook Farm', false).
+adv_safari('Seven Sisters', false).
 
 %Relaxation
-sunbathing(the_savoy, true).
-sunbathing(hook_farm, true).
-sunbathing(seven_sisters, false).
-yoga(the_savoy, true).
-yoga(hook_farm, true).
-yoga(seven_sisters, false).
+sunbathing('The Savoy', true).
+sunbathing('Hook Farm', true).
+sunbathing('Seven Sisters', false).
+yoga('The Savoy', true).
+yoga('Hook Farm', true).
+yoga('Seven Sisters', false).
 
 %Sightseeing
-museums(the_savoy, true).
-museums(hook_farm, false).
-museums(seven_sisters, false).
-s_safari(the_savoy, false).
-s_safari(hook_farm, false).
-s_safari(seven_sisters, false).
+museums('The Savoy', true).
+museums('Hook Farm', false).
+museums('Seven Sisters', false).
+s_safari('The Savoy', false).
+s_safari('Hook Farm', false).
+s_safari('Seven Sisters', false).
 
 
 
 %Sports
-hiking(the_savoy, false).
-hiking(hook_farm, true).
-hiking(seven_sisters, true).
-surfing(the_savoy, false).
-surfing(hook_farm, false).
-surfing(seven_sisters, false).
+hiking('The Savoy', false).
+hiking('Hook Farm', true).
+hiking('Seven Sisters', true).
+surfing('The Savoy', false).
+surfing('Hook Farm', false).
+surfing('Seven Sisters', false).
 
 %Contact
-contact(the_savoy, true, "+44 20 3870 2583").
-contact(hook_farm, false, " ").
-contact(seven_sisters, false, " ").
+contact('The Savoy', true, "+44 20 3870 2583").
+contact('Hook Farm', false, " ").
+contact('Seven Sisters', false, " ").
 
 %Destination
-beach(the_savoy, false).
-beach(hook_farm, false).
-beach(seven_sisters, false).
-retiree_destination(seven_sisters, false).
-retiree_destination(the_savoy, true).
-retiree_destination(hook_farm, true).
+beach('The Savoy', false).
+beach('Hook Farm', false).
+beach('Seven Sisters', false).
+retiree_destination('Seven Sisters', false).
+retiree_destination('The Savoy', true).
+retiree_destination('Hook Farm', true).
 
 %RuralArea
-rural_area(the_savoy, false).
-rural_area(hook_farm, true).
-rural_area(seven_sisters, false).
+rural_area('The Savoy', false).
+rural_area('Hook Farm', true).
+rural_area('Seven Sisters', false).
 
 %FarmLand
-farm_land(the_savoy, false).
-farm_land(hook_farm, true).
-farm_land(seven_sisters, false).
+farm_land('The Savoy', false).
+farm_land('Hook Farm', true).
+farm_land('Seven Sisters', false).
 
 %NationalPark
-national_park(the_savoy, false).
-national_park(hook_farm, false).
-national_park(seven_sisters, false).
+national_park('The Savoy', false).
+national_park('Hook Farm', false).
+national_park('Seven Sisters', false).
 
 %UrbanArea
-capital(the_savoy, true).
-capital(hook_farm, true).
-capital(seven_sisters, true).
+capital('The Savoy', true).
+capital('Hook Farm', true).
+capital('Seven Sisters', true).
 
 %Town
-town(the_savoy, true).
-town(hook_farm, true).
-town(seven_sisters, true).
+town('The Savoy', true).
+town('Hook Farm', true).
+town('Seven Sisters', true).

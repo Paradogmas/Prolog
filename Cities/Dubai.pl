@@ -2,9 +2,8 @@
 %Campsite Hook Farm
 %Hotel Seven Sisters
 %Accommodation
-hotel(atlantis, true).
+hotel('Atlantis', true).
 hotel(seven_sisters, true).
-bed_and_breakfast(the_savoy, true).
 campsite(hook_farm, true).
 
 %AccommodationRating
@@ -17,13 +16,6 @@ two_s(seven_sisters, true).
 three_s(the_savoy, false).
 three_s(hook_farm, true).
 three_s(seven_sisters, false).
-four_s(the_savoy, false).
-four_s(hook_farm, false).
-four_s(seven_sisters, false).
-five_s(the_savoy, true).
-five_s(hook_farm, false).
-five_s(seven_sisters, false).
-
 
 %Activity
 
