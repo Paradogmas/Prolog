@@ -2,98 +2,92 @@
 %Campsite Hook Farm
 %Hotel Seven Sisters
 %Accommodation
-hotel('The Savoy', true).
-hotel('Seven Sisters', true).
-campsite('Hook Farm', true).
+hotel('The Savoy','London - England', true).
+hotel('Seven Sisters','London - England', true).
+campsite('Hook Farm','London - England', true).
 
 %AccommodationRating
-one_s('The Savoy', false).
-one_s('Hook Farm', false).
-one_s('Seven Sisters', false).
-two_s('The Savoy', false).
-two_s('Hook Farm', false).
-two_s('Seven Sisters', true).
-three_s('The Savoy', false).
-three_s('Hook Farm', true).
-three_s('Seven Sisters', false).
-four_s('The Savoy', false).
-four_s('Hook Farm', false).
-four_s('Seven Sisters', false).
-five_s('The Savoy', true).
-five_s('Hook Farm', false).
-five_s('Seven Sisters', false).
+one_s('The Savoy','London - England', false).
+one_s('Hook Farm','London - England', true).
+one_s('Seven Sisters','London - England', true).
+two_s('The Savoy','London - England', false).
+two_s('Hook Farm','London - England', false).
+two_s('Seven Sisters','London - England', false).
+three_s('The Savoy','London - England', true).
+three_s('Hook Farm','London - England', false).
+three_s('Seven Sisters','London - England', false).
 
 
 %Activity
 
 %Adventure
-bunjee_jumping('The Savoy', false).
-bunjee_jumping('Seven Sisters', false).
-bunjee_jumping('Hook Farm', false).
-adv_safari('The Savoy', false).
-adv_safari('Hook Farm', false).
-adv_safari('Seven Sisters', false).
+bunjee_jumping('The Savoy','London - England', false).
+bunjee_jumping('Seven Sisters','London - England', false).
+bunjee_jumping('Hook Farm','London - England', false).
+adv_safari('The Savoy','London - England', false).
+adv_safari('Hook Farm','London - England', false).
+adv_safari('Seven Sisters','London - England', false).
 
 %Relaxation
-sunbathing('The Savoy', true).
-sunbathing('Hook Farm', true).
-sunbathing('Seven Sisters', false).
-yoga('The Savoy', true).
-yoga('Hook Farm', true).
-yoga('Seven Sisters', false).
+sunbathing('The Savoy','London - England', true).
+sunbathing('Hook Farm','London - England', true).
+sunbathing('Seven Sisters','London - England', false).
+yoga('The Savoy','London - England', true).
+yoga('Hook Farm','London - England', true).
+yoga('Seven Sisters','London - England', false).
 
 %Sightseeing
-museums('The Savoy', true).
-museums('Hook Farm', false).
-museums('Seven Sisters', false).
-s_safari('The Savoy', false).
-s_safari('Hook Farm', false).
-s_safari('Seven Sisters', false).
+museums('The Savoy','London - England', true).
+museums('Hook Farm','London - England', false).
+museums('Seven Sisters','London - England', false).
+s_safari('The Savoy','London - England', false).
+s_safari('Hook Farm','London - England', false).
+s_safari('Seven Sisters','London - England', false).
 
 
 
 %Sports
-hiking('The Savoy', false).
-hiking('Hook Farm', true).
-hiking('Seven Sisters', true).
-surfing('The Savoy', false).
-surfing('Hook Farm', false).
-surfing('Seven Sisters', false).
+hiking('The Savoy','London - England', false).
+hiking('Hook Farm','London - England', true).
+hiking('Seven Sisters','London - England', true).
+surfing('The Savoy','London - England', false).
+surfing('Hook Farm','London - England', false).
+surfing('Seven Sisters','London - England', false).
 
 %Contact
-contact('The Savoy', true, "+44 20 3870 2583").
-contact('Hook Farm', false, " ").
-contact('Seven Sisters', false, " ").
+contact('The Savoy','London - England', true,'London - England', "+44 20 3870 2583").
+contact('Hook Farm','London - England', false,'London - England', " ").
+contact('Seven Sisters','London - England', false,'London - England', " ").
 
 %Destination
-beach('The Savoy', false).
-beach('Hook Farm', false).
-beach('Seven Sisters', false).
-retiree_destination('Seven Sisters', false).
-retiree_destination('The Savoy', true).
-retiree_destination('Hook Farm', true).
+beach('The Savoy','London - England', false).
+beach('Hook Farm','London - England', false).
+beach('Seven Sisters','London - England', false).
+retiree_destination('Seven Sisters','London - England', false).
+retiree_destination('The Savoy','London - England', true).
+retiree_destination('Hook Farm','London - England', true).
 
 %RuralArea
-rural_area('The Savoy', false).
-rural_area('Hook Farm', true).
-rural_area('Seven Sisters', false).
+rural_area('The Savoy','London - England', false).
+rural_area('Hook Farm','London - England', true).
+rural_area('Seven Sisters','London - England', false).
 
 %FarmLand
-farm_land('The Savoy', false).
-farm_land('Hook Farm', true).
-farm_land('Seven Sisters', false).
+farm_land('The Savoy','London - England', false).
+farm_land('Hook Farm','London - England', true).
+farm_land('Seven Sisters','London - England', false).
 
 %NationalPark
-national_park('The Savoy', false).
-national_park('Hook Farm', false).
-national_park('Seven Sisters', false).
+national_park('The Savoy','London - England', false).
+national_park('Hook Farm','London - England', false).
+national_park('Seven Sisters','London - England', false).
 
 %UrbanArea
-capital('The Savoy', true).
-capital('Hook Farm', true).
-capital('Seven Sisters', true).
+capital('The Savoy','London - England', true).
+capital('Hook Farm','London - England', true).
+capital('Seven Sisters','London - England', true).
 
 %Town
-town('The Savoy', true).
-town('Hook Farm', true).
-town('Seven Sisters', true).
+town('The Savoy','London - England', false).
+town('Hook Farm','London - England', false).
+town('Seven Sisters','London - England', false).
