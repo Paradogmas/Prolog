@@ -1,119 +1,119 @@
+%Turning off warnings
+:-style_check(-discontiguous).
+
+
 :-include('Cities/Rio_de_Janeiro.pl').
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
 
-%get_name
-get_name(AC, name):-
-    name(AC, true).
-
-
 %Accommodation
-accommodation(AC) :-
-    budget_accomodation(AC);
-    campground(AC);
-    hotel(AC).
+accommodation(AC, CITY) :-
+    budget_accomodation(AC, CITY);
+    campground(AC, CITY);
+    hotel(AC, CITY).
 
 %BudgetCommodation
-budget_accomodation(AC):-
-    one_s(AC, true);
-    two_s(AC, true).
+budget_accomodation(AC, CITY):-
+    one_s(AC, CITY, true);
+    two_s(AC, CITY, true).
 
 %CampGround
-campground(AC):-
-    one_s(AC, true).
+
+campground(AC, CITY):-
+    one_s(AC, CITY, true).
 
 %Hotel
-hotel(AC):-
-    not((bed_and_breakfast(AC, true),
-    (campground(AC)))),
-    get_name(AC, NAME).
+hotel(AC, CITY):-
+    bed_and_breakfast(AC, CITY, false),
+    %if one_s = false then is not a campgroud
+    one_s(AC, CITY, false).
 
 %LuxuryHotel
-luxury_hotel(AC):-
-    three_s(AC).
+luxury_hotel(AC, CITY):-
+    three_s(AC, CITY, true).
 
 
 
 %AccommodationRating
-accommodation_rating(AC) :-
-    one_s(AC, true);
-    two_s(AC, true);
-    three_s(AC, true).
+accommodation_rating(AC, CITY) :-
+    one_s(AC, CITY, true);
+    two_s(AC, CITY, true);
+    three_s(AC, CITY, true).
 
 %Activity
 %Adventure
-adventure(AC):-
-    bunjee_jumping(AC);
-    adv_safari(AC).
+adventure(AC, CITY):-
+    bunjee_jumping(AC, CITY, true);
+    adv_safari(AC, CITY, true).
 
 %Relaxation
-relaxation(AC):-
-    sunbathing(AC);
-    yoga(AC).
+relaxation(AC, CITY):-
+    sunbathing(AC, CITY, true);
+    yoga(AC, CITY, true).
 
 %Sightseeing
-sightseeing(AC):-
-    museums(AC);
-    s_safari(AC).
+sightseeing(AC, CITY):-
+    museums(AC, CITY, true);
+    s_safari(AC, CITY, true).
 
 %Sports
-sports(AC):-
-    hiking(AC);
-    surfing(AC).
+sports(AC, CITY):-
+    hiking(AC, CITY, true);
+    surfing(AC, CITY, true).
 
 
-activity(AC):-
-    adventure(AC);
-    relaxation(AC);
-    sightseeing(AC);
-    sports(AC).
+activity(AC, CITY):-
+    adventure(AC, CITY);
+    relaxation(AC, CITY);
+    sightseeing(AC, CITY);
+    sports(AC, CITY).
 
 %Destination
 %BackPackersDestination
-back_packers_destination(AC):-
-    budget_accomodation(AC),
-    adventure(AC); sports(AC).
+back_packers_destination(AC, CITY):-
+    (budget_accomodation(AC, CITY),
+    (adventure(AC, CITY); sports(AC, CITY))).
 
 %BudgetHotelDestination
-budget_hotel_destination(AC):-
-    budget_accomodation(AC),
-    hotel(AC).
+budget_hotel_destination(AC, CITY):-
+    budget_accomodation(AC, CITY),
+    hotel(AC, CITY).
 
 %FamilyDestination
-family_destination(AC):-
-    accommodation(AC),
-    activity(AC). %ISSUE: É necessário 2 ou mais atividades, como solicitar isso aqui????
+family_destination(AC, CITY):-
+    (accommodation(AC, CITY),
+    activity(AC, CITY)). %ISSUE: É necessário 2 ou mais atividades, como solicitar isso aqui????
 
 %QuietDestination
-quiet_destination(AC):-
-    not(family_destination(AC)).
+quiet_destination(AC, CITY):-
+    family_destination(AC, CITY).
 
 %RetireeDestination
-retiree_destination(AC):-
-    accommodation(AC),
-    three_s(AC),
-    sightseeing(AC).
+retiree_destination(AC, CITY):-
+    accommodation(AC, CITY),
+    three_s(AC, CITY, true),
+    sightseeing(AC, CITY).
 
 %RuralArea
 
 %NationalPark
-national_park(AC):-
-    campground(AC),
-    hiking(AC).
+national_park(AC, CITY):-
+    campground(AC, CITY),
+    hiking(AC, CITY).
 
-rural_area(AC):-
-    farm_land(AC);
-    national_park(AC).
+rural_area(AC, CITY):-
+    farm_land(AC, CITY, true);
+    national_park(AC, CITY).
 
 %UrbanArea
 
 %City
-city(AC):-
-    luxury_hotel(AC).
-capital(AC):-
-    city(AC),
-    museums(AC).
+city(AC, CITY):-
+    luxury_hotel(AC, CITY).
+capital(AC, CITY):-
+    city(AC, CITY),
+    museums(AC, CITY, true).
 
-urban_area(AC):-
-    city(AC);
-    town(AC).
+urban_area(AC, CITY):-
+    city(AC, CITY);
+    town(AC, CITY, true).

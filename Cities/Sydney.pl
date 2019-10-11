@@ -1,47 +1,45 @@
 %Hotel Megaboom City Hotel
-%Name
-name('Megaboom', true).
 %Accommodation
-bed_and_breakfast(megaboom, false).
+bed_and_breakfast('Megaboom City Hotel','Sydney - Austrália', false).
 
 %AccommodationRating
-one_s(megaboom, false).
-two_s(megaboom, false).
-three_s(megaboom, true).
+one_s('Megaboom City Hotel','Sydney - Austrália', false).
+two_s('Megaboom City Hotel','Sydney - Austrália', false).
+three_s('Megaboom City Hotel','Sydney - Austrália', true).
 
 %Activity
 
 %Adventure
-bunjee_jumping(megaboom, true).
-adv_safari(megaboom, false).
+bunjee_jumping('Megaboom City Hotel','Sydney - Austrália', true).
+adv_safari('Megaboom City Hotel','Sydney - Austrália', false).
 
 %Relaxation
-sunbathing(megaboom, true).
-yoga(megaboom, true).
+sunbathing('Megaboom City Hotel','Sydney - Austrália', true).
+yoga('Megaboom City Hotel','Sydney - Austrália', true).
 
 %Sightseeing
-museums(megaboom, true).
-s_safari(megaboom, false).
+museums('Megaboom City Hotel','Sydney - Austrália', true).
+s_safari('Megaboom City Hotel','Sydney - Austrália', false).
 
 %Sports
-hiking(megaboom, true).
-surfing(megaboom, true).
+hiking('Megaboom City Hotel','Sydney - Austrália', true).
+surfing('Megaboom City Hotel','Sydney - Austrália', true).
 
 %Contact
-contact(megaboom, true, "+614 2658-4288").
+contact('Megaboom City Hotel','Sydney - Austrália', "+614 2658-4288").
 
 %Destination
-beach(megaboom, true).
+beach('Megaboom City Hotel','Sydney - Austrália', true).
 
 %RuralArea
 
 %FarmLand
-farm_land(megaboom, false).
+farm_land('Megaboom City Hotel','Sydney - Austrália', false).
 
 %NationalPark
-national_park(megaboom, false).
+national_park('Megaboom City Hotel','Sydney - Austrália', false).
 
 %UrbanArea
 
 %Town
-town(megaboom, true).
+town('Megaboom City Hotel','Sydney - Austrália', true).

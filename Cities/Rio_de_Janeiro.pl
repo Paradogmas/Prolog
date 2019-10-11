@@ -1,47 +1,45 @@
 %Hotel Apoteose
-%Name
-name('Apoteose', true).
 %Accommodation
-bed_and_breakfast(apoteose, false).
+bed_and_breakfast('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %AccommodationRating
-one_s(apoteose, false).
-two_s(apoteose, false).
-three_s(apoteose, true).
+one_s('Apoteose', 'Rio de Janeiro - Brazil', false).
+two_s('Apoteose', 'Rio de Janeiro - Brazil', false).
+three_s('Apoteose', 'Rio de Janeiro - Brazil', true).
 
 %Activity
 
 %Adventure
-bunjee_jumping(apoteose, false).
-adv_safari(apoteose, false).
+bunjee_jumping('Apoteose', 'Rio de Janeiro - Brazil', true).
+adv_safari('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %Relaxation
-sunbathing(apoteose, false).
-yoga(apoteose, false).
+sunbathing('Apoteose', 'Rio de Janeiro - Brazil', false).
+yoga('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %Sightseeing
-museums(apoteose, true).
-s_safari(apoteose, false).
+museums('Apoteose', 'Rio de Janeiro - Brazil', true).
+s_safari('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %Sports
-hiking(apoteose, false).
-surfing(apoteose, true).
+hiking('Apoteose', 'Rio de Janeiro - Brazil', true).
+surfing('Apoteose', 'Rio de Janeiro - Brazil', true).
 
 %Contact
-contact(apoteose, true, "+55 (21) 3518-1137").
+contact('Apoteose', 'Rio de Janeiro - Brazil', "+55 (21) 3518-1137").
 
 %Destination
-beach(apoteose, true).
+beach('Apoteose', 'Rio de Janeiro - Brazil', true).
 
 %RuralArea
 
 %FarmLand
-farm_land(apoteose, false).
+farm_land('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %NationalPark
-national_park(apoteose, false).
+national_park('Apoteose', 'Rio de Janeiro - Brazil', false).
 
 %UrbanArea
 
 %Town
-town(apoteose, true).
+town('Apoteose', 'Rio de Janeiro - Brazil', true).
