@@ -1,0 +1,1 @@
+accomodationRating(fourstars).
