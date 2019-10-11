@@ -1,14 +1,13 @@
 %Hotel Apoteose
+%Name
+name('Apoteose', true).
 %Accommodation
-bed_and_breakfast(apoteose, true).
-hotel(apoteose, true).
+bed_and_breakfast(apoteose, false).
 
 %AccommodationRating
 one_s(apoteose, false).
 two_s(apoteose, false).
 three_s(apoteose, true).
-four_s(apoteose, false).
-five_s(apoteose, false).
 
 %Activity
 
@@ -29,7 +28,7 @@ hiking(apoteose, false).
 surfing(apoteose, true).
 
 %Contact
-contact(apoteose, true, "(21) 3518-1137").
+contact(apoteose, true, "+55 (21) 3518-1137").
 
 %Destination
 beach(apoteose, true).
