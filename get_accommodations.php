@@ -7,8 +7,11 @@
 
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
+    $print_localization = ' print(X), print(Y), nl, fail, halt"';
     if($local === '') {
         $local = 'Y';
+    } else {
+        $print_localization = ' print(X), nl, fail, halt"';
     }
     
     $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
@@ -34,8 +37,9 @@ if($_POST){
     $city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
     $capital= filter_input(INPUT_POST, 'capital', FILTER_SANITIZE_STRING);
     $urban_area = filter_input(INPUT_POST, 'urban_area', FILTER_SANITIZE_STRING);
+    
     echo '<br>';
-    exec('swipl -s Accommodation.pl -g "'.str_replace('Y', $local, $accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area).' print(X), print(Y), nl, fail, halt"', $output);
+    exec('swipl -s Accommodation.pl -g "'.str_replace('Y', $local, $accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area).$print_localization, $output);
 }
 echo '<br>';
 $output = array_unique($output);
