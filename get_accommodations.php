@@ -6,6 +6,11 @@
 <?php
 
 if($_POST){
+    $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
+    if($local === '') {
+        $local = 'Y';
+    }
+    
     $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
     $bunjee_jump = filter_input(INPUT_POST, 'bunjee_jump', FILTER_SANITIZE_STRING);
     $budget_accommodation = filter_input(INPUT_POST, 'budget_accommodation', FILTER_SANITIZE_STRING);
@@ -30,13 +35,17 @@ if($_POST){
     $capital= filter_input(INPUT_POST, 'capital', FILTER_SANITIZE_STRING);
     $urban_area = filter_input(INPUT_POST, 'urban_area', FILTER_SANITIZE_STRING);
     echo '<br>';
-    exec('swipl -s Accommodation.pl -g "'.$accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area.' print(X), print(Y), nl, fail, halt"', $output);
+    exec('swipl -s Accommodation.pl -g "'.str_replace('Y', $local, $accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area).' print(X), print(Y), nl, fail, halt"', $output);
 }
 echo '<br>';
 $output = array_unique($output);
-foreach ($output as $out) {
-    echo $out;
-    echo "<br>";
+if(sizeof($output) === 0) {
+    echo 'Sem resultados';
+} else {
+    foreach ($output as $out) {
+        echo $out;
+        echo "<br>";
+    }
 }
 ?>
 </body>

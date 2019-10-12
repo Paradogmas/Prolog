@@ -34,8 +34,6 @@ hotel(AC, CITY):-
 luxury_hotel(AC, CITY):-
     three_s(AC, CITY, true).
 
-
-
 %AccommodationRating
 accommodation_rating(AC, CITY) :-
     one_s(AC, CITY, true);

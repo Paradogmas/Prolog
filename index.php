@@ -8,6 +8,12 @@
 <body>
 <div class="container" style="width: 400px;">
     <form action=" " method="POST">
+        Local 
+        <select name="local">
+            <option value="">Todos</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+        </select>
         <p>Accommodation (All) <input type="checkbox" name="accommodation" value="accommodation(X, Y, true),"></p>
         <p>Bunjee Jump <input type="checkbox" name="bunjee_jump" value="bunjee_jumping(X, Y, true),"></p>
         <p>Budget Accommodation <input type="checkbox" name="budget_accommodation" value="budget_accommodation(X, Y, true),"></p>
