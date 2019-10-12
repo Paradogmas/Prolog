@@ -7,19 +7,20 @@
 :-include('Cities/Tokyo.pl').
 
 %Accommodation
-accommodation(AC, CITY) :-
-    budget_accomodation(AC, CITY);
-    campground(AC, CITY);
+accommodation(AC, CITY, true) :-
+    budget_accommodation(AC, CITY, true);
+    campground(AC, CITY, true);
     hotel(AC, CITY).
+    
 
 %BudgetCommodation
-budget_accomodation(AC, CITY):-
+budget_accommodation(AC, CITY, true):-
     one_s(AC, CITY, true);
     two_s(AC, CITY, true).
 
 %CampGround
 
-campground(AC, CITY):-
+campground(AC, CITY, true):-
     one_s(AC, CITY, true).
 
 %Hotel
@@ -42,7 +43,7 @@ accommodation_rating(AC, CITY) :-
 
 %Activity
 %Adventure
-adventure(AC, CITY):-
+adventure(AC, CITY, true):-
     bunjee_jumping(AC, CITY, true);
     adv_safari(AC, CITY, true).
 
@@ -62,48 +63,48 @@ sports(AC, CITY):-
     surfing(AC, CITY, true).
 
 
-activity(AC, CITY):-
-    adventure(AC, CITY);
+activity(AC, CITY, true):-
+    adventure(AC, CITY, true);
     relaxation(AC, CITY);
     sightseeing(AC, CITY);
     sports(AC, CITY).
 
 %Destination
 %BackPackersDestination
-back_packers_destination(AC, CITY):-
-    (budget_accomodation(AC, CITY),
+back_packers_destination(AC, CITY, true):-
+    (budget_accommodation(AC, CITY, true),
     (adventure(AC, CITY); sports(AC, CITY))).
 
 %BudgetHotelDestination
-budget_hotel_destination(AC, CITY):-
-    budget_accomodation(AC, CITY),
+budget_hotel_destination(AC, CITY, true):-
+    budget_accommodation(AC, CITY, true),
     hotel(AC, CITY).
 
 %FamilyDestination
-family_destination(AC, CITY):-
-    (accommodation(AC, CITY),
-    activity(AC, CITY)). %ISSUE: É necessário 2 ou mais atividades, como solicitar isso aqui????
+family_destination(AC, CITY, true):-
+    (accommodation(AC, CITY, true),
+    activity(AC, CITY, true)). %ISSUE: É necessário 2 ou mais atividades, como solicitar isso aqui????
 
 %QuietDestination
-quiet_destination(AC, CITY):-
-    family_destination(AC, CITY).
+quiet_destination(AC, CITY, true):-
+    family_destination(AC, CITY, true). %ISSUE: Deveria ser not family_destination porém só retorna false, o que fazer?
 
 %RetireeDestination
-retiree_destination(AC, CITY):-
-    accommodation(AC, CITY),
+retiree_destination(AC, CITY, true):-
+    accommodation(AC, CITY, true),
     three_s(AC, CITY, true),
     sightseeing(AC, CITY).
 
 %RuralArea
 
 %NationalPark
-national_park(AC, CITY):-
-    campground(AC, CITY),
+national_park(AC, CITY, true):-
+    campground(AC, CITY, true),
     hiking(AC, CITY).
 
-rural_area(AC, CITY):-
+rural_area(AC, CITY, true):-
     farm_land(AC, CITY, true);
-    national_park(AC, CITY).
+    national_park(AC, CITY, true).
 
 %UrbanArea
 
