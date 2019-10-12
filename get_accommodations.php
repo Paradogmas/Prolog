@@ -4,8 +4,6 @@
 </head>
 <body>
 <?php
-use Ds\Set;
-$outpu = Array();
 
 if($_POST){
     $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
