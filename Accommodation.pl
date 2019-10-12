@@ -6,6 +6,8 @@
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
 :-include('Cities/Paris.pl').
+:-include('Cities/Kyoto.pl').
+:-include('Cities/Copenhagen.pl').
 
 %Accommodation
 accommodation(AC, CITY, true) :-
@@ -94,18 +96,15 @@ retiree_destination(AC, CITY, true):-
     three_s(AC, CITY, true),
     sightseeing(AC, CITY).
 
-%RuralArea
-
 %NationalPark
 national_park(AC, CITY, true):-
     campground(AC, CITY, true),
     hiking(AC, CITY).
 
+%RuralArea
 rural_area(AC, CITY, true):-
     farm_land(AC, CITY, true);
     national_park(AC, CITY, true).
-
-%UrbanArea
 
 %City
 city(AC, CITY):-
@@ -114,6 +113,7 @@ capital(AC, CITY):-
     city(AC, CITY),
     museums(AC, CITY, true).
 
+%UrbanArea
 urban_area(AC, CITY):-
     city(AC, CITY);
     town(AC, CITY, true).

@@ -11,7 +11,7 @@ one_s('Santiago Guesthouse', kyoto, true).
 two_s('Bokuyado Mini Japanese Room', kyoto, false).
 two_s('Motonago', kyoto, false).
 two_s('Santiago Guesthouse', kyoto, true).
-three_s('Bokuyado Mini Japanese Room', kyoto, false).
+three_s('Bokuyado Mini Japanese Room', kyoto, true).
 three_s('Motonago', kyoto, true).
 three_s('Santiago Guesthouse', kyoto, false).
 
