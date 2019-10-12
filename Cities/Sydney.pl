@@ -1,4 +1,5 @@
-%Hotel Megaboom City Hotel
+%Hotel Megaboom City Hotel, Sysney Harbour Bed & Breakfast, Coogee Beachside Budget Accommodation
+%Campgroung The Basin Campground
 %Accommodation
 bed_and_breakfast('Megaboom City Hotel', 'Sydney - Austrália', false).
 
