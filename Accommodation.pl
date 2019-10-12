@@ -5,6 +5,7 @@
 :-include('Cities/Rio_de_Janeiro.pl').
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
+:-include('Cities/Paris.pl').
 
 %Accommodation
 accommodation(AC, CITY, true) :-
@@ -26,7 +27,7 @@ campground(AC, CITY, true):-
 %Hotel
 hotel(AC, CITY):-
     bed_and_breakfast(AC, CITY, false),
-    %if one_s = false then is not a campgroud
+    %if one_s = false then is not a campground
     one_s(AC, CITY, false).
 
 %LuxuryHotel
