@@ -1,6 +1,11 @@
 %Hotel Manzini Fishing & Campsite, Sysney Harbour Bed & Breakfast, Airport Inn And Suites
 %Campgroung Reef Hotel
 %Accommodation
+image('Manzini Fishing & Campsite', johannesburg, 'https://c8.alamy.com/comp/MHHM17/dukuza-south-africa-march-18-2018-entrance-to-the-manzini-fishing-and-camp-site-at-the-woodstock-dam-in-dukuza-MHHM17.jpg').
+image('Reef Hotel', johannesburg, 'https://edge.media.datahc.com/HI110554953.jpg').
+image('Chalet 4 Bluebell', johannesburg, 'https://q-xx.bstatic.com/xdata/images/hotel/max1000/182484172.jpg?k=417b46fba23737f7f2bacdbe4091bec64d104c2aecca54b78936e8b74f4d6a5a').
+image('Airport Inn And Suites', johannesburg, 'https://s-ec.bstatic.com/images/hotel/max1280x900/915/91536964.jpg').
+
 bed_and_breakfast('Manzini Fishing & Campsite', 'Johannesburg - Africa', false).
 
 bed_and_breakfast('Reef Hotel', 'Johannesburg - Africa', false).

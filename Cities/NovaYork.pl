@@ -1,6 +1,11 @@
 %Camp Gateway - Staten Island, Lotte New York Palace Hotel, The Park Ave North, The Pierre
 %
 %Accommodation
+image('Camp Gateway', nova york, 'http://kaijabeishline.com/wp-content/uploads/2017/07/img_3970.png').
+image('Lotte New York Palace Hotel', nova york, 'https://lajollamom.com/wp-content/uploads/2018/10/Towers-at-Lotte-New-York-Palace-Review-800x540.jpg').
+image('The Park Ave North', nova york, 'https://images.trvl-media.com/hotels/14000000/13440000/13432800/13432719/644a0715_z.jpg').
+image('The Pierre', nova york, 'https://q-xx.bstatic.com/xdata/images/hotel/max500/150667705.jpg?k=51349407ed6f63b8aabdaaeb6b65eea551bc4783a2116682ed7a93144209b289&o=').
+
 bed_and_breakfast('Camp Gateway - Staten Island', 'Nova York - USA', false).
 
 bed_and_breakfast('Lotte New York Palace Hotel', 'Nova York - USA', false).

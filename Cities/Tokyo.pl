@@ -1,6 +1,11 @@
 %Hotel Shangri-La Hotel, Mokkoan Hotel;
 %ITABASHI-KU MOTOHASUNUMA Budget accommodation - House
 %Accommodation
+image('Shangri-La Hotel', tokyo, 'https://q-cf.bstatic.com/images/hotel/max1024x768/120/120176876.jpg').
+image('Mokkoan Hotel', tokyo, 'https://media-cdn.tripadvisor.com/media/photo-s/0d/35/c8/1f/getlstd-property-photo.jpg').
+image('ITABASHI-KU MOTOHASUNUMA', tokyo, 'https://www.sakura-house.com/premise/send_medium5_premise_image/190304/3.jpg?1556775153').
+image('Shonen Camping Ground', tokyo, 'https://camp.tabinchuya.com/yamaguti/tokiwa_shonen_2.jpg').
+
 bed_and_breakfast('Shangri-La Hotel', tokyo, false).
 
 bed_and_breakfast('Mokkoan Hotel', tokyo, false).

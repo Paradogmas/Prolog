@@ -1,6 +1,11 @@
 %Days Inn Orlando/international Drive, Bill Frederick Park, Rosen Inn, Parc Corniche Condominium Suites
 %
 %Accommodation
+image('Days Inn Orlando/international Drive', orlando, 'https://www.travlu.com/111/hotelimages/daysinnorlando/days_inn_exterior_day_2.jpg').
+image('Bill Frederick Park', orlando, 'https://media-cdn.tripadvisor.com/media/photo-s/07/be/42/c0/bill-frederick-park-and.jpg').
+image('Rosen Inn', orlando, 'https://x.cdrst.com/foto/hotel-sf/17797/granderesp/rosen-inn-closest-to-universal-servicios-866dfd1.jpg').
+image('Parc Corniche Condominium Suites', orlando, 'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/55/95/55954_v5.jpeg').
+
 bed_and_breakfast('Days Inn Orlando/international Drive', 'Orlando - USA', false).
 
 bed_and_breakfast('Bill Frederick Park', 'Orlando - USA', false).

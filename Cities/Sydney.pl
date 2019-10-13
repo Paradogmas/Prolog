@@ -1,6 +1,11 @@
 %Hotel Megaboom City Hotel, Sysney Harbour Bed & Breakfast, Coogee Beachside Budget Accommodation
 %Campgroung The Basin Campground
 %Accommodation
+image('Megaboom City Hotel', sydney, 'https://dimg04.c-ctrip.com/images/220u0g00000081isw54BA_R_1136_750_R5_D.jpg').
+image('The Basin campground', sydney, 'https://www.nationalparks.nsw.gov.au/-/media/npws/images/parks/ku-ring-gai-chase-national-park/the-basin-campground/basin-campground-06.jpg').
+image('Sydney Harbour Bed & Breakfast', sydney, 'http://media.expedia.com/hotels/7000000/6340000/6339900/6339831/8c826993_z.jpg').
+image('Coogee Beachside Budget Accommodation', sydney, 'https://q-cf.bstatic.com/images/hotel/max1024x768/113/113514387.jpg').
+
 bed_and_breakfast('Megaboom City Hotel', 'Sydney - Austrália', false).
 
 bed_and_breakfast('The Basin campground', 'Sydney - Austrália', false).
