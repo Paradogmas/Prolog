@@ -7,11 +7,11 @@
 
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
-    $print_localization = ' print(X), print(Y), print(Z), nl, fail, halt"';
+    $print_localization = ' print(X), print(Y), print(Z), print(W), nl, fail, halt"';
     if($local === '') {
         $local = 'Y';
     } else {
-        $print_localization = ' print(X), print(Z), nl, fail, halt"';
+        $print_localization = ' print(X), print(Z), print(W), nl, fail, halt"';
     }
     
     $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
@@ -47,9 +47,16 @@ if(sizeof($output) === 0) {
     echo 'Sem resultados';
 } else {
     foreach ($output as $out) {
-        echo $out;
+        $string = "123,46,78,000"; 
+        $str_arr = explode ("'", $out); 
+        $cc_arr = explode ('"', $str_arr[2]);
         echo "<br>";
-        echo "<img src='https://avatars2.githubusercontent.com/u/27078392?s=40&v=4' alt='Minha Figura'>";
+        echo "Hotel: $str_arr[1]<br>";
+        echo "Cidade: $cc_arr[0]<br>";
+        echo "Contato: $cc_arr[1]<br>";
+        echo "<img src=$str_arr[3] alt='Minha Figura'><br>";
+        // echo $out;
+        echo "<br>";    
     }
 }
 ?>

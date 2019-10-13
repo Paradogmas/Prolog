@@ -11,30 +11,32 @@
 :-include('Cities/Wellington.pl').
 
 %Accommodation
-accommodation(AC, CITY, Phone) :-
-    budget_accommodation(AC, CITY, Phone);
-    campground(AC, CITY, Phone);
-    hotel(AC, CITY, Phone).
+accommodation(AC, CITY, Phone, Image) :-
+    budget_accommodation(AC, CITY, Phone, Image);
+    campground(AC, CITY, Phone, Image);
+    hotel(AC, CITY, Phone, Image).
     
-
 %BudgetCommodation
-budget_accommodation(AC, CITY, Phone):-
+budget_accommodation(AC, CITY, Phone, Image):-
     (one_s(AC, CITY, true);
     two_s(AC, CITY, true)),
-    contact(AC, CITY, Phone).
+    contact(AC, CITY, Phone),
+    image(AC, CITY, Image).
 
 %CampGround
 
-campground(AC, CITY, Phone):-
+campground(AC, CITY, Phone, Image):-
     one_s(AC, CITY, true),
-    contact(AC, CITY, Phone).
+    contact(AC, CITY, Phone),
+    image(AC, CITY, Image).
 
 %Hotel
-hotel(AC, CITY, Phone):-
+hotel(AC, CITY, Phone, Image):-
     bed_and_breakfast(AC, CITY,false),
     %if one_s = false then is not a campgroud
     one_s(AC, CITY, false),
-    contact(AC, CITY, Phone).
+    contact(AC, CITY, Phone),
+    image(AC, CITY, Image).
 
 %LuxuryHotel
 luxury_hotel(AC, CITY):-
@@ -76,35 +78,35 @@ activity(AC, CITY, true):-
 
 %Destination
 %BackPackersDestination
-back_packers_destination(AC, CITY):-
-    (budget_accommodation(AC, CITY),
+back_packers_destination(AC, CITY, Phone, Image):-
+    (budget_accommodation(AC, CITY, Phone, Image),
     (adventure(AC, CITY, true); sports(AC, CITY))).
 
 %BudgetHotelDestination
-budget_hotel_destination(AC, CITY, true):-
-    budget_accommodation(AC, CITY),
-    hotel(AC, CITY).
+budget_hotel_destination(AC, CITY, true, Phone, Image):-
+    budget_accommodation(AC, CITY, Phone, Image),
+    hotel(AC, CITY, Phone, Image).
 
 %FamilyDestination
-family_destination(AC, CITY, true):-
-    (accommodation(AC, CITY),
+family_destination(AC, CITY, true, Phone, Image):-
+    (accommodation(AC, CITY, Phone, Image),
     activity(AC, CITY, true)). %ISSUE: É necessário 2 ou mais atividades, como solicitar isso aqui????
 
 %QuietDestination
-quiet_destination(AC, CITY):-
-    family_destination(AC, CITY, true). %ISSUE: Deveria ser not family_destination porém só retorna false, o que fazer?
+quiet_destination(AC, CITY, Phone, Image):-
+    family_destination(AC, CITY, true, Phone, Image). %ISSUE: Deveria ser not family_destination porém só retorna false, o que fazer?
 
 %RetireeDestination
-retiree_destination(AC, CITY):-
-    accommodation(AC, CITY),
+retiree_destination(AC, CITY, Phone, Image):-
+    accommodation(AC, CITY, Phone, Image),
     three_s(AC, CITY, true),
     sightseeing(AC, CITY).
 
 %RuralArea
 
 %NationalPark
-national_park(AC, CITY):-
-    campground(AC, CITY),
+national_park(AC, CITY, Phone, Image):-
+    campground(AC, CITY, Phone, Image),
     hiking(AC, CITY, true).
 
 rural_area(AC, CITY, true):-
@@ -116,6 +118,7 @@ rural_area(AC, CITY, true):-
 %City
 city(AC, CITY):-
     luxury_hotel(AC, CITY).
+
 capital(AC, CITY):-
     city(AC, CITY),
     museums(AC, CITY, true).
