@@ -1,4 +1,4 @@
-%Hotel Apoteose
+%Hotel Copenhagen
 %Accommodation
 image('Charlottenlund Fort Camping', copenhagen, 'https://lh5.googleusercontent.com/p/AF1QipO2BzyrdJfOk0F8Ucuf8yohcviayisf43R00u96=s387-k-no').
 image('Radisson Collection Hotel', copenhagen, 'https://media-cdn.tripadvisor.com/media/photo-w/11/4a/14/43/radisson-blu-royal-hotel.jpg').

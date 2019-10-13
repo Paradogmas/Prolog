@@ -1,4 +1,4 @@
-%Hotel Apoteose
+%Hotel Paris
 %Accommodation
 image('Le Bristol Paris', paris, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/19/99/2b/1c/lobby.jpg').
 image('La Chambre du Marais', paris, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhPMUXo7ATxKdfNgfBgbgp4Er9o3QYcghgX6mHyamgaXaOHUXEgA').

@@ -1,4 +1,4 @@
-%Hotel Apoteose
+%Hotel Wellington
 %Accommodation
 image('The Marion Hostel', wellington, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/15/61/fe/45/the-marion-hostel.jpg').
 image('The Dwellington', wellington, 'https://media-cdn.tripadvisor.com/media/photo-s/11/bd/02/4d/the-dwellington.jpg').
