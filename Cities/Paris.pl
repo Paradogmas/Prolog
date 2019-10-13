@@ -1,5 +1,6 @@
 %Hotel Apoteose
 %Accommodation
+
 bed_and_breakfast('Le Bristol Paris', paris, false).
 bed_and_breakfast('La Chambre du Marais', paris, false).
 bed_and_breakfast('Petit nid montmartrois', paris, true).
@@ -50,9 +51,9 @@ surfing('La Chambre du Marais', paris, false).
 surfing('Petit nid montmartrois', paris, false).
 
 %Contact
-contact('Le Bristol Paris', paris, true, "+33 1 86 76 10 75").
-contact('La Chambre du Marais', paris, true, "+33 1 86 76 10 75").
-contact('Petit nid montmartrois', paris, true, "+33 1 44 84 08 65").
+contact('Le Bristol Paris', paris, "+33 1 86 76 10 75").
+contact('La Chambre du Marais', paris, "+33 1 86 76 10 75").
+contact('Petit nid montmartrois', paris, "+33 1 44 84 08 65").
 
 %Destination
 beach('Le Bristol Paris', paris, false).
