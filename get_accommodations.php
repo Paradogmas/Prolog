@@ -7,11 +7,11 @@
 
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
-    $print_localization = ' print(X), print(Y), nl, fail, halt"';
+    $print_localization = ' print(X), print(Y), print(Z), nl, fail, halt"';
     if($local === '') {
         $local = 'Y';
     } else {
-        $print_localization = ' print(X), nl, fail, halt"';
+        $print_localization = ' print(X), print(Z), nl, fail, halt"';
     }
     
     $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
@@ -49,6 +49,7 @@ if(sizeof($output) === 0) {
     foreach ($output as $out) {
         echo $out;
         echo "<br>";
+        echo "<img src='https://avatars2.githubusercontent.com/u/27078392?s=40&v=4' alt='Minha Figura'>";
     }
 }
 ?>

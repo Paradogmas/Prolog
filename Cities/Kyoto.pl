@@ -50,9 +50,9 @@ surfing('Motonago', kyoto, false).
 surfing('Santiago Guesthouse', kyoto, false).
 
 %Contact
-contact('Bokuyado Mini Japanese Room', kyoto, false, "").
-contact('Motonago', kyoto, false, "").
-contact('Santiago Guesthouse', kyoto, false, "").
+contact('Bokuyado Mini Japanese Room', kyoto, "").
+contact('Motonago', kyoto, "").
+contact('Santiago Guesthouse', kyoto, "").
 
 %Destination
 beach('Bokuyado Mini Japanese Room', kyoto, true).

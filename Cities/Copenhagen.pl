@@ -50,9 +50,9 @@ surfing('Radisson Collection Hotel', copenhagen, false).
 surfing('Bedwood Hoste', copenhagen, false).
 
 %Contact
-contact('Charlottenlund Fort Camping', copenhagen, true, "+45 44 22 00 65").
-contact('Radisson Collection Hotel', copenhagen, true, "+44 28 9067 7700").
-contact('Bedwood Hoste', copenhagen, true, "+45 61 42 61 46").
+contact('Charlottenlund Fort Camping', copenhagen, "+45 44 22 00 65").
+contact('Radisson Collection Hotel', copenhagen, "+44 28 9067 7700").
+contact('Bedwood Hoste', copenhagen, "+45 61 42 61 46").
 
 %Destination
 beach('Charlottenlund Fort Camping', copenhagen, false).
