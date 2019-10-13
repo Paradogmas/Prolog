@@ -1,5 +1,9 @@
 %Hotel Apoteose
 %Accommodation
+image('Bokuyado Mini Japanese Room', kyoto, 'https://a0.muscache.com/im/pictures/eb93ed65-e4ac-4b73-999e-201c7cb1f3e2.jpg?aki_policy=xx_large').
+image('Motonago', kyoto, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/35/88/ee/caption.jpg').
+image('Santiago Guesthouse', kyoto, 'https://r-cf.bstatic.com/images/hotel/max1024x768/137/137255119.jpg').
+
 bed_and_breakfast('Bokuyado Mini Japanese Room', kyoto, true).
 bed_and_breakfast('Motonago', kyoto, false).
 bed_and_breakfast('Santiago Guesthouse', kyoto, true).

@@ -1,5 +1,9 @@
 %Hotel Apoteose
 %Accommodation
+image('The Marion Hostel', wellington, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/15/61/fe/45/the-marion-hostel.jpg').
+image('The Dwellington', wellington, 'https://media-cdn.tripadvisor.com/media/photo-s/11/bd/02/4d/the-dwellington.jpg').
+image('Beautiful Colonial house', wellington, 'https://a0.muscache.com/im/pictures/39561484/5f36ade8_original.jpg?aki_policy=xx_large').
+
 bed_and_breakfast('The Marion Hostel', wellington, false).
 bed_and_breakfast('The Dwellington', wellington, false).
 bed_and_breakfast('Beautiful Colonial house', wellington, true).
@@ -50,9 +54,9 @@ surfing('The Dwellington', wellington, true).
 surfing('Beautiful Colonial house', wellington, false).
 
 %Contact
-contact('The Marion Hostel', wellington, true, "+64 27 284 3887").
-contact('The Dwellington', wellington, true, "+64 4-550 9373").
-contact('Beautiful Colonial house', wellington, false, "").
+contact('The Marion Hostel', wellington, "+64 27 284 3887").
+contact('The Dwellington', wellington, "+64 4-550 9373").
+contact('Beautiful Colonial house', wellington, "").
 
 %Destination
 beach('The Marion Hostel', wellington, true).

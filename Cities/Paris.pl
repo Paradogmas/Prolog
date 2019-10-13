@@ -1,5 +1,8 @@
 %Hotel Apoteose
 %Accommodation
+image('Le Bristol Paris', paris, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/19/99/2b/1c/lobby.jpg').
+image('La Chambre du Marais', paris, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhPMUXo7ATxKdfNgfBgbgp4Er9o3QYcghgX6mHyamgaXaOHUXEgA').
+image('Petit nid montmartrois', paris, 'https://a0.muscache.com/im/pictures/1add7a01-61ba-4ded-a12a-ed4f2a3006b7.jpg?aki_policy=xx_large').
 
 bed_and_breakfast('Le Bristol Paris', paris, false).
 bed_and_breakfast('La Chambre du Marais', paris, false).
