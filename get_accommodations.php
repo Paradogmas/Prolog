@@ -17,10 +17,10 @@ function translateName($local, $cidade) {
         'rio'=>'Rio de Janeiro - Brasil',
         'sydney'=>'Sydney - Austrália', 
         'tokyo'=>'Tóquio - Japão', 
-        'wellington'=>'Wellington - Nova Zelândia'
-        'Seul'=>'Seul - Coreia do Sul'
-        'Zurique'=>'Zurique - Suíça'
-        'Roma'=>'Roma - Itália'
+        'wellington'=>'Wellington - Nova Zelândia',
+        'Seul'=>'Seul - Coreia do Sul',
+        'Zurique'=>'Zurique - Suíça',
+        'Roma'=>'Roma - Itália',
         'Moscou'=>'Moscou - Rússia'
     );
     if($local !== 'Y')
