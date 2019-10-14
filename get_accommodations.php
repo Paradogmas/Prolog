@@ -18,6 +18,10 @@ function translateName($local, $cidade) {
         'sydney'=>'Sydney - Austrália', 
         'tokyo'=>'Tóquio - Japão', 
         'wellington'=>'Wellington - Nova Zelândia'
+        'Seul'=>'Seul - Coreia do Sul'
+        'Zurique'=>'Zurique - Suíça'
+        'Roma'=>'Roma - Itália'
+        'Moscou'=>'Moscou - Rússia'
     );
     if($local !== 'Y')
         return $cities[$local];

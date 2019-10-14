@@ -14,6 +14,10 @@
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
 :-include('Cities/Wellington.pl').
+:-include('Cities/Seul.pl').
+:-include('Cities/Roma.pl').
+:-include('Cities/Moscou.pl').
+:-include('Cities/Zurique.pl').
 
 %Accommodation
 accommodation(AC, CITY, Phone, Image) :-
