@@ -4,9 +4,37 @@
 </head>
 <body>
 <?php
+function translateName($local, $cidade) {
+    $cities = array(
+        'copenhagen'=>'Copenhagen - Dinamarca', 
+        'dubai'=>'Dubai - Emirados Árabes Unidos', 
+        'johannesburg'=>'Johanesburgo - África do Sul',
+        'kyoto'=>'Quioto - Japão', 
+        'london'=>'Londres - Inglaterra', 
+        'nova_york'=>'Nova York - EStados Unidos',
+        'orlando'=>'Orlando - Estados Unidos', 
+        'paris'=>'Paris - França', 
+        'rio'=>'Rio de Janeiro - Brasil',
+        'sydney'=>'Sydney - Austrália', 
+        'tokyo'=>'Tóquio - Japão', 
+        'wellington'=>'Wellington - Nova Zelândia'
+    );
+    if($local !== 'Y')
+        return $cities[$local];
+    else
+        return $cities[$cidade];
+}
 
 if($_POST){
-    $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
+    $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
+    $print_localization = ' print(X), print(Y), print(Z), print(W), nl, fail, halt"';
+    if($local === '') {
+        $local = 'Y';
+    } else {
+        $print_localization = ' print(X), print(Z), print(W), nl, fail, halt"';
+    }
+    
+    $accommodation = 'accommodation(X, Y, Z, W),';
     $bunjee_jump = filter_input(INPUT_POST, 'bunjee_jump', FILTER_SANITIZE_STRING);
     $budget_accommodation = filter_input(INPUT_POST, 'budget_accommodation', FILTER_SANITIZE_STRING);
     $campground = filter_input(INPUT_POST, 'campground', FILTER_SANITIZE_STRING);
@@ -29,14 +57,27 @@ if($_POST){
     $city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
     $capital= filter_input(INPUT_POST, 'capital', FILTER_SANITIZE_STRING);
     $urban_area = filter_input(INPUT_POST, 'urban_area', FILTER_SANITIZE_STRING);
+    
     echo '<br>';
-    exec('swipl -s Accommodation.pl -g "'.$accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area.' print(X), print(Y), nl, fail, halt"', $output);
+    exec('swipl -s Accommodation.pl -g "'.str_replace('Y', $local, $accommodation.$bunjee_jump.$budget_accommodation.$campground.$hotel.$luxury_hotel.$accommodation_rating.$adventure.$relaxation.$sightseeing.$sports.$activity.$back_packers_destination.$budget_hotel_destination.$family_destination.$quiet_destination.$retiree_destination.$national_park.$rural_area.$city.$capital.$urban_area).$print_localization, $output);
 }
 echo '<br>';
 $output = array_unique($output);
-foreach ($output as $out) {
-    echo $out;
-    echo "<br>";
+if(sizeof($output) === 0) {
+    echo 'Sem resultados';
+} else {
+    foreach ($output as $out) {
+        $string = "123,46,78,000"; 
+        $str_arr = explode ("'", $out); 
+        $cc_arr = explode ('"', $str_arr[2]);
+        echo "<br>";
+        echo "Hotel: $str_arr[1]<br>";
+        echo "Cidade: ".translateName($local, $cc_arr[0])."<br>";
+        echo "Contato: $cc_arr[1]<br>";
+        echo "<img src=$str_arr[3] alt='Minha Figura'><br>";
+        // echo $out;
+        echo "<br>";    
+    }
 }
 ?>
 </body>
