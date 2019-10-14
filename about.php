@@ -76,11 +76,8 @@
 					</form>
 				</div>
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="index.php">Home</a></li>
 					<li class="menu_item menu_mm"><a href="#">About us</a></li>
-					<li class="menu_item menu_mm"><a href="offers.html">Offers</a></li>
-					<li class="menu_item menu_mm"><a href="news.html">News</a></li>
-					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
 				</ul>
 
 				<!-- Menu Social -->
