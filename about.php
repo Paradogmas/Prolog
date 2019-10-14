@@ -112,7 +112,7 @@
 							<div class="home_title">About us</div>
 							<div class="home_breadcrumbs">
 								<ul class="home_breadcrumbs_list">
-									<li class="home_breadcrumb"><a href="index.html">Home</a></li>
+									<li class="home_breadcrumb"><a href="index.php">Home</a></li>
 									<li class="home_breadcrumb">About us</li>
 								</ul>
 							</div>
