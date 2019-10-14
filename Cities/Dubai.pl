@@ -1,92 +1,102 @@
 %Hotel Atlantis
-%Campsite Hook Farm
-%Hotel Seven Sisters
+%Campsite Dubai Marina
+%Hotel Hyatt Regency Dubai
 %Accommodation
-hotel('Atlantis', true).
-hotel(seven_sisters, true).
-campsite(hook_farm, true).
+
+image('Atlantis', dubai, 'https://www.turningleftforless.com.br/wp-content/uploads/2019/06/Atlants-the-Palm.jpg').
+image('Dubai Marina', dubai, 'https://a0.muscache.com/im/pictures/5134aaad-272a-4199-88ae-935d42807f1e.jpg?aki_policy=xx_large').
+image('Hyatt Regency Dubai', dubai, 'https://media-cdn.tripadvisor.com/media/photo-m/1280/14/22/bd/73/exterior.jpg').
+
+price('Atlantis',dubai,'$ 2900.00').
+price('Dubai Marina',dubai,'$ 49.00').
+price('Hyatt Regency Dubai',dubai,'$ 495.00').
+
+bed_and_breakfast('Atlantis',dubai, false).
+bed_and_breakfast('Hyatt Regency Dubai',dubai, false).
+bed_and_breakfast('Dubai Marina',dubai, true).
 
 %AccommodationRating
-one_s(the_savoy, false).
-one_s(hook_farm, false).
-one_s(seven_sisters, false).
-two_s(the_savoy, false).
-two_s(hook_farm, false).
-two_s(seven_sisters, true).
-three_s(the_savoy, false).
-three_s(hook_farm, true).
-three_s(seven_sisters, false).
+one_s('Atlantis',dubai, false).
+one_s('Dubai Marina',dubai, true).
+one_s('Hyatt Regency Dubai',dubai, false).
+two_s('Atlantis',dubai, false).
+two_s('Dubai Marina',dubai, false).
+two_s('Hyatt Regency Dubai',dubai, false).
+three_s('Atlantis',dubai, true).
+three_s('Dubai Marina',dubai, false).
+three_s('Hyatt Regency Dubai',dubai, true).
+
 
 %Activity
 
 %Adventure
-bunjee_jumping(the_savoy, false).
-bunjee_jumping(seven_sisters, false).
-bunjee_jumping(hook_farm, false).
-adv_safari(the_savoy, false).
-adv_safari(hook_farm, false).
-adv_safari(seven_sisters, false).
+bunjee_jumping('Atlantis',dubai, true).
+bunjee_jumping('Hyatt Regency Dubai',dubai, false).
+bunjee_jumping('Dubai Marina',dubai, false).
+adv_safari('Atlantis',dubai, false).
+adv_safari('Dubai Marina',dubai, false).
+adv_safari('Hyatt Regency Dubai',dubai, false).
 
 %Relaxation
-sunbathing(the_savoy, true).
-sunbathing(hook_farm, true).
-sunbathing(seven_sisters, false).
-yoga(the_savoy, true).
-yoga(hook_farm, true).
-yoga(seven_sisters, false).
+sunbathing('Atlantis',dubai, true).
+sunbathing('Dubai Marina',dubai, true).
+sunbathing('Hyatt Regency Dubai',dubai, true).
+yoga('Atlantis',dubai, true).
+yoga('Dubai Marina',dubai, true).
+yoga('Hyatt Regency Dubai',dubai, true).
 
 %Sightseeing
-museums(the_savoy, true).
-museums(hook_farm, false).
-museums(seven_sisters, false).
-s_safari(the_savoy, false).
-s_safari(hook_farm, false).
-s_safari(seven_sisters, false).
+museums('Atlantis',dubai, false).
+museums('Dubai Marina',dubai, false).
+museums('Hyatt Regency Dubai',dubai, false).
+s_safari('Atlantis',dubai, false).
+s_safari('Dubai Marina',dubai, false).
+s_safari('Hyatt Regency Dubai',dubai, false).
 
 
 
 %Sports
-hiking(the_savoy, false).
-hiking(hook_farm, true).
-hiking(seven_sisters, true).
-surfing(the_savoy, false).
-surfing(hook_farm, false).
-surfing(seven_sisters, false).
+hiking('Atlantis',dubai, true).
+hiking('Dubai Marina',dubai, true).
+hiking('Hyatt Regency Dubai',dubai, true).
+surfing('Atlantis',dubai, true).
+surfing('Dubai Marina',dubai, true).
+surfing('Hyatt Regency Dubai',dubai, true).
 
 %Contact
-contact(the_savoy, true, "+44 20 3870 2583").
-contact(hook_farm, false, " ").
-contact(seven_sisters, false, " ").
+contact('Atlantis', dubai, "+971 4 426 2000").
+contact('Dubai Marina', dubai, " ").
+contact('Hyatt Regency Dubai', dubai, "+971 4 209 1527").
 
 %Destination
-beach(the_savoy, false).
-beach(hook_farm, false).
-beach(seven_sisters, false).
-retiree_destination(seven_sisters, false).
-retiree_destination(the_savoy, true).
-retiree_destination(hook_farm, true).
+beach('Atlantis',dubai, true).
+beach('Dubai Marina',dubai, true).
+beach('Hyatt Regency Dubai',dubai, true).
+retiree_destination('Hyatt Regency Dubai',dubai, true).
+retiree_destination('Atlantis',dubai, true).
+retiree_destination('Dubai Marina',dubai, true).
 
 %RuralArea
-rural_area(the_savoy, false).
-rural_area(hook_farm, true).
-rural_area(seven_sisters, false).
+rural_area('Atlantis',dubai, false).
+rural_area('Dubai Marina',dubai, false).
+rural_area('Hyatt Regency Dubai',dubai, false).
 
 %FarmLand
-farm_land(the_savoy, false).
-farm_land(hook_farm, true).
-farm_land(seven_sisters, false).
+farm_land('Atlantis',dubai, false).
+farm_land('Dubai Marina',dubai, false).
+farm_land('Hyatt Regency Dubai',dubai, false).
 
 %NationalPark
-national_park(the_savoy, false).
-national_park(hook_farm, false).
-national_park(seven_sisters, false).
+national_park('Atlantis',dubai, false).
+national_park('Dubai Marina',dubai, false).
+national_park('Hyatt Regency Dubai',dubai, false).
 
 %UrbanArea
-capital(the_savoy, true).
-capital(hook_farm, true).
-capital(seven_sisters, true).
+capital('Atlantis',dubai, true).
+capital('Dubai Marina',dubai, true).
+capital('Hyatt Regency Dubai',dubai, true).
 
 %Town
-town(the_savoy, true).
-town(hook_farm, true).
-town(seven_sisters, true).
+town('Atlantis',dubai, true).
+town('Dubai Marina',dubai, true).
+town('Hyatt Regency Dubai',dubai, true).

@@ -7,6 +7,10 @@ image('The Savoy', london, 'https://cocoweddingvenues.co.uk/wp-content/uploads/2
 image('Hook Farm', london, 'https://hookfarmcamping.com/wp-content/uploads/2017/04/hook-farm-camp-site-motorhome-5.jpg').
 image('Seven Sisters', london, 'https://media-cdn.tripadvisor.com/media/photo-w/07/33/c8/fd/no8-seven-sisters.jpg').
 
+price('The Savoy',london,'$ 2357.00').
+price('Hook Farm',london,'$ 71.00').
+price('Seven Sisters',london,'$ 41.00').
+
 bed_and_breakfast('The Savoy',london, false).
 bed_and_breakfast('Seven Sisters',london, false).
 bed_and_breakfast('Hook Farm',london, false).
@@ -60,9 +64,9 @@ surfing('Hook Farm',london, false).
 surfing('Seven Sisters',london, false).
 
 %Contact
-contact('The Savoy',london, london, "+44 20 3870 2583").
-contact('Hook Farm',london, london, "+44 01297 442801 ").
-contact('Seven Sisters',london, london, " ").
+contact('The Savoy',london,  "+44 20 3870 2583").
+contact('Hook Farm',london,  "+44 01297 442801 ").
+contact('Seven Sisters', london, " ").
 
 %Destination
 beach('The Savoy',london, false).
