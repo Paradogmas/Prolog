@@ -35,13 +35,13 @@ three_s('Hyatt Regency Moscow Petrovsky Park', moscou, true).
 bunjee_jumping('Pentahotel Moscow, Arbat', moscou, false).
 adv_safari('Pentahotel Moscow, Arbat', moscou, false).
 
-bunjee_jumping('Palmira Business Club', moscou, false)).
+bunjee_jumping('Palmira Business Club', moscou, false).
 adv_safari('Palmira Business Club', moscou, false).
 
-bunjee_jumping('Pokrovskiy Dom', moscou, false)).
+bunjee_jumping('Pokrovskiy Dom', moscou, false).
 adv_safari('Pokrovskiy Dom', moscou, false).
 
-bunjee_jumping('Hyatt Regency Moscow Petrovsky Park', moscou, false)).
+bunjee_jumping('Hyatt Regency Moscow Petrovsky Park', moscou, false).
 adv_safari('Hyatt Regency Moscow Petrovsky Park', moscou, false).
 
 
