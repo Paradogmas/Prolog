@@ -14,7 +14,7 @@
             <option value="paris">Paris</option>
             <option value="tokyo">Tokyo</option>
         </select>
-        <p>Accommodation (All) <input type="checkbox" name="accommodation" value="accommodation(X, Y, Z, W),"></p>
+        <p>Accommodation (All) <input type="checkbox" name="accommodation" value="accommodation(X, Y, Z, W)," checked disabled></p>
         <p>Bunjee Jump <input type="checkbox" name="bunjee_jump" value="bunjee_jumping(X, Y, true),"></p>
         <p>Budget Accommodation <input type="checkbox" name="budget_accommodation" value="budget_accommodation(X, Y, Z, W),"></p>
         <p>Camp Ground <input type="checkbox" name="campground" value="campground(X, Y, Z, W),"></p>

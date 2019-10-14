@@ -2,12 +2,17 @@
 :-style_check(-discontiguous).
 
 
+:-include('Cities/Copenhagen.pl').
+:-include('Cities/Dubai.pl').
+:-include('Cities/Johannesburg.pl').
+:-include('Cities/Kyoto.pl').
+:-include('Cities/Londres.pl').
+:-include('Cities/NovaYork.pl').
+:-include('Cities/Orlando.pl').
+:-include('Cities/Paris.pl').
 :-include('Cities/Rio_de_Janeiro.pl').
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
-:-include('Cities/Paris.pl').
-:-include('Cities/Copenhagen.pl').
-:-include('Cities/Kyoto.pl').
 :-include('Cities/Wellington.pl').
 
 %Accommodation

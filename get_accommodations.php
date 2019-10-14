@@ -4,6 +4,26 @@
 </head>
 <body>
 <?php
+function translateName($local, $cidade) {
+    $cities = array(
+        'copenhagen'=>'Copenhagen - Dinamarca', 
+        'dubai'=>'Dubai - Emirados Árabes Unidos', 
+        'johannesburg'=>'Johanesburgo - África do Sul',
+        'kyoto'=>'Quioto - Japão', 
+        'london'=>'Londres - Inglaterra', 
+        'nova_york'=>'Nova York - EStados Unidos',
+        'orlando'=>'Orlando - Estados Unidos', 
+        'paris'=>'Paris - França', 
+        'rio'=>'Rio de Janeiro - Brasil',
+        'sydney'=>'Sydney - Austrália', 
+        'tokyo'=>'Tóquio - Japão', 
+        'wellington'=>'Wellington - Nova Zelândia'
+    );
+    if($local !== 'Y')
+        return $cities[$local];
+    else
+        return $cities[$cidade];
+}
 
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
@@ -14,7 +34,7 @@ if($_POST){
         $print_localization = ' print(X), print(Z), print(W), nl, fail, halt"';
     }
     
-    $accommodation = filter_input(INPUT_POST, 'accommodation', FILTER_SANITIZE_STRING);
+    $accommodation = 'accommodation(X, Y, Z, W),';
     $bunjee_jump = filter_input(INPUT_POST, 'bunjee_jump', FILTER_SANITIZE_STRING);
     $budget_accommodation = filter_input(INPUT_POST, 'budget_accommodation', FILTER_SANITIZE_STRING);
     $campground = filter_input(INPUT_POST, 'campground', FILTER_SANITIZE_STRING);
@@ -52,7 +72,7 @@ if(sizeof($output) === 0) {
         $cc_arr = explode ('"', $str_arr[2]);
         echo "<br>";
         echo "Hotel: $str_arr[1]<br>";
-        echo "Cidade: $cc_arr[0]<br>";
+        echo "Cidade: ".translateName($local, $cc_arr[0])."<br>";
         echo "Contato: $cc_arr[1]<br>";
         echo "<img src=$str_arr[3] alt='Minha Figura'><br>";
         // echo $out;
