@@ -92,9 +92,8 @@
 						</div>
 
 						<form id="search_form" class="search_form bez_1">
-							<input type="search" class="search_content_input bez_1">
-						</form>
-
+                            <input type="search" class="search_content_input bez_1">
+                        </form>
 						<div class="hamburger">
 							<i class="fa fa-bars trans_200"></i>
 						</div>
@@ -221,121 +220,79 @@
 
 	</div>
 
-	<!-- Search -->
 
-	<div class="search">
-		
+    <!-- Search -->
 
-		<!-- Search Contents -->
-		
-		<div class="container fill_height">
-			<div class="row fill_height">
-				<div class="col fill_height">
+    <div class="search">
 
-					<!-- Search Tabs -->
 
-					<div class="search_tabs_container">
-						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>accommodation</span></div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">destination</div>
-						</div>		
-					</div>
+        <!-- Search Contents -->
 
-					<!-- Search Panel -->
+        <div class="container fill_height">
+            <div class="row fill_height">
+                <div class="col fill_height">
 
-					<div class="search_panel active">
-						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">	
-								<label for="accommodation" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Accommodation (All) <input type="checkbox" style="vertical-align: middle" style="vertical-align: middle" name="accommodation" id="accommodation" value="accommodation(X, Y, true),"></label>
-								<label for="bunjee_jump" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Bunjee Jumping <input id="bunjee_jump" type="checkbox" style="vertical-align: middle" name="bunjee_jump" value="bunjee_jumping(X, Y, true),"></label>
-								<label for="budget_accommodation" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Budget Accommodation <input type="checkbox" style="vertical-align: middle" id="budget_accommodation" name="budget_accommodation" value="budget_accommodation(X, Y, true),"></label>
-								<label for="campground" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Camp Ground <input type="checkbox" style="vertical-align: middle" id="campground" name="campground" value="campground(X, Y, true),"></label>
-								<label for="hotel" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Hotel <input type="checkbox" style="vertical-align: middle" id="hotel" name="hotel" value="hotel(X, Y),"></label>
-								<label for="luxury_hotel" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Luxury Hotel <input type="checkbox" style="vertical-align: middle" id="luxury_hotel" name="luxury_hotel" value="luxury_hotel(X, Y),"></label>
-								<label for="accommodatoin_rating" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Accommodation Rating <input type="checkbox" style="vertical-align: middle" name="accommodation_rating" value="accommodation_rating(X, Y),"></label>
-								<!--<button style="float: right;" class="button search_button">search</button>-->
-							</div>
-						</form>
-					</div>
+                    <!-- Search Tabs -->
 
-					<!-- Search Panel -->
+                    <div class="search_tabs_container">
+                        <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+                            <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start">accommodations</div>
+                            <!--<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+                            <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">destination</div>-->
+                        </div>
+                    </div>
 
-					<div class="search_panel">
-						<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_2" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_2" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<button class="button search_button">search<span></span><span></span><span></span></button>
-						</form>
-					</div>
+                    <!-- Search Panel -->
+                    <div class="search_panel active">
+                        <form method="POST" action="" id="search_form" class="search_panel_content flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+                            <fieldset>
+                                <label style="font-size: 15px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">accommodations type<br></label><br>
+                                <label for="accommodation" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Accommodation (All) <input type="checkbox" style="vertical-align: middle" style="vertical-align: middle" name="accommodation" id="accommodation" value="accommodation(X, Y, Z, W),"></label>
+                                <label for="bunjee_jump" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Bunjee Jumping <input id="bunjee_jump" type="checkbox" style="vertical-align: middle" name="bunjee_jump" value="bunjee_jumping(X, Y, true),"></label>
+                                <label for="budget_accommodation" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Budget Accommodation <input type="checkbox" style="vertical-align: middle" id="budget_accommodation" name="budget_accommodation" value="budget_accommodation(X, Y, Z, W),"></label>
+                                <label for="campground" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Camp Ground <input type="checkbox" style="vertical-align: middle" id="campground" name="campground" value="campground(X, Y, Z, W),"></label>
+                                <label for="hotel" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Hotel <input type="checkbox" style="vertical-align: middle" id="hotel" name="hotel" value="hotel(X, Y, Z, W),"></label>
+                                <label for="luxury_hotel" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Luxury Hotel <input type="checkbox" style="vertical-align: middle" id="luxury_hotel" name="luxury_hotel" value="luxury_hotel(X, Y),"></label>
+                                <label for="accommodatoin_rating" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Accommodation Rating <input type="checkbox" style="vertical-align: middle" name="accommodation_rating" value="accommodation_rating(X, Y),"></label>
 
-					<!-- Search Panel -->
+                            </fieldset>
+                            <fieldset>
+                                <label style="font-size: 15px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">activities<br></label><br>
+                                <label for="adventure" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Adventure <input type="checkbox" style="vertical-align: middle" style="vertical-align: middle" name="adventure" value="adventure(X, Y, true)," id="adventure"></label>
+                                <label for="relaxation" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Relaxation <input type="checkbox" style="vertical-align: middle" style="vertical-align: middle" name="relaxation" value="relaxation(X, Y)," id="relaxation"></label>
+                                <label for="sightseeing" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Sight Seeing <input type="checkbox" style="vertical-align: middle" style="vertical-align: middle" name="sightseeing" value="sightseeing(X, Y)," id="sightseeing"></label>
+                                <label for="sports" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Sports <input type="checkbox" name="sports" style="vertical-align: middle" style="vertical-align: middle" name="relaxation" value="sports(X, Y)," id="sports"></label>
+                                <label for="activity" style="font-size: 13px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">Activity <input type="checkbox" name="activity" style="vertical-align: middle" style="vertical-align: middle" name="relaxation" value="activity(X, Y, true)," id="activity"></label>
+                            </fieldset>
 
-					<div class="search_panel">
-						<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_3" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_3" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							
-						</form>
-					</div>
+
+                            <input value="Search" name="submit" type ="submit" class="button search_button"/><span></span><span></span><span></span><br>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+	<div class="offers">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="section_title">the best offers with rooms</h2>
 				</div>
 			</div>
+			<div class="row offers_items">
+				<?php
+				if($_POST['submit']):
+					require_once "get_accommodations.php";
+				endif;
+				?>
+			</div>
 		</div>
-		<button style="float: right" class="button search_button">search<span></span><span></span><span></span></button>	
 	</div>
-	
+
+
+
 
 	<!-- Intro -->
 	

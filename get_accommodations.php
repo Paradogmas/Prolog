@@ -11,7 +11,7 @@ function translateName($local, $cidade) {
         'johannesburg'=>'Johanesburgo - África do Sul',
         'kyoto'=>'Quioto - Japão', 
         'london'=>'Londres - Inglaterra', 
-        'nova_york'=>'Nova York - EStados Unidos',
+        'nova_york'=>'Nova York - Estados Unidos',
         'orlando'=>'Orlando - Estados Unidos', 
         'paris'=>'Paris - França', 
         'rio'=>'Rio de Janeiro - Brasil',
@@ -25,15 +25,22 @@ function translateName($local, $cidade) {
         return $cities[$cidade];
 }
 
+function contact($cont) {
+    if ($cont == '') {
+        return 'Sem contato';
+    } else {
+        return $cont;
+    }
+}
+
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
     $print_localization = ' print(X), print(Y), print(Z), print(W), nl, fail, halt"';
-    if($local === '') {
+    if($local == '') {
         $local = 'Y';
     } else {
         $print_localization = ' print(X), print(Z), print(W), nl, fail, halt"';
     }
-    
     $accommodation = 'accommodation(X, Y, Z, W),';
     $bunjee_jump = filter_input(INPUT_POST, 'bunjee_jump', FILTER_SANITIZE_STRING);
     $budget_accommodation = filter_input(INPUT_POST, 'budget_accommodation', FILTER_SANITIZE_STRING);
@@ -70,14 +77,57 @@ if(sizeof($output) === 0) {
         $string = "123,46,78,000"; 
         $str_arr = explode ("'", $out); 
         $cc_arr = explode ('"', $str_arr[2]);
-        echo "<br>";
-        echo "Hotel: $str_arr[1]<br>";
-        echo "Cidade: ".translateName($local, $cc_arr[0])."<br>";
-        echo "Contato: $cc_arr[1]<br>";
-        echo "<img src=$str_arr[3] alt='Minha Figura'><br>";
-        // echo $out;
-        echo "<br>";    
+        echo '
+        <div class="col-lg-6 offers_col">
+            <div class="offers_item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offers_image_container">
+                            <!-- Image by https://unsplash.com/@kensuarez -->
+                            <div class="offers_image_background" style="background-image:url('.$str_arr[3].'"></div>
+                            <div class="offer_name"><a href="#">'.$str_arr[1].'</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offers_content">
+                            <div class="offers_price">$70<span>per night</span></div>
+                            <div class="rating_r rating_r_4 offers_rating">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <p class="offers_text">'.translateName($local, $cc_arr[0]).'</p>
+                            <p class="offers_text">'.contact($cc_arr[1]).'</p>
+                            <div class="offers_icons">
+                                <ul class="offers_icons_list">
+                                    <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+                                    <li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+                                    <li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+                                    <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>';
     }
+
+
+    // foreach ($output as $out) {
+    //     $string = "123,46,78,000"; 
+    //     $str_arr = explode ("'", $out); 
+    //     $cc_arr = explode ('"', $str_arr[2]);
+    //     echo "<br>";
+    //     echo "Hotel: $str_arr[1]<br>";
+    //     echo "Cidade: ".translateName($local, $cc_arr[0])."<br>";
+    //     echo "Contato: $cc_arr[1]<br>";
+    //     echo "<img style='width: 200px;'src=$str_arr[3] alt='Minha Figura'><br>";
+    //     // echo $out;
+    //     echo "<br>";    
+    // }
 }
 ?>
 </body>
