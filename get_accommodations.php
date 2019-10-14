@@ -24,16 +24,14 @@ function translateName($local, $cidade) {
     else
         return $cities[$cidade];
 }
-
 if($_POST){
     $local = filter_input(INPUT_POST, 'local', FILTER_SANITIZE_STRING);
     $print_localization = ' print(X), print(Y), print(Z), print(W), nl, fail, halt"';
-    if($local === '') {
+    if($local == '') {
         $local = 'Y';
     } else {
         $print_localization = ' print(X), print(Z), print(W), nl, fail, halt"';
     }
-    
     $accommodation = 'accommodation(X, Y, Z, W),';
     $bunjee_jump = filter_input(INPUT_POST, 'bunjee_jump', FILTER_SANITIZE_STRING);
     $budget_accommodation = filter_input(INPUT_POST, 'budget_accommodation', FILTER_SANITIZE_STRING);
@@ -74,7 +72,7 @@ if(sizeof($output) === 0) {
         echo "Hotel: $str_arr[1]<br>";
         echo "Cidade: ".translateName($local, $cc_arr[0])."<br>";
         echo "Contato: $cc_arr[1]<br>";
-        echo "<img src=$str_arr[3] alt='Minha Figura'><br>";
+        echo "<img style='width: 200px;'src=$str_arr[3] alt='Minha Figura'><br>";
         // echo $out;
         echo "<br>";    
     }
