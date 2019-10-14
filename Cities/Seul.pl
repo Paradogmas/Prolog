@@ -89,7 +89,7 @@ contact('Park Hyatt Seoul', seul, "+82 2 2016 1234").
 
 contact('THE PLAZA Seoul, Autograph Collection', seul, " +82 2-771-2200").
 
-contact('Stay Hotel Gangnam', seul, " +82 2-568-6200").
+contact('Stay Hotel Gangnam', seul, "+82 2-568-6200").
 
 contact('Four Points By Sheraton Seoul, Namsan', seul, "+82 2-6070-7000").
 
