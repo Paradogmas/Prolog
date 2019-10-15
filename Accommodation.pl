@@ -51,6 +51,8 @@ init:-
 :-include('Cities/Roma.pl').
 :-include('Cities/Moscou.pl').
 :-include('Cities/Zurique.pl').
+:-include('Cities/Jerusalem.pl').
+:-include('Cities/Gramado.pl').
 
 
 :-dynamic image/3.
