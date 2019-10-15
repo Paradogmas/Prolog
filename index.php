@@ -76,7 +76,7 @@
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 							<h1>discover</h1>
 							<h1>the world</h1>
-							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+							<div class="button home_slider_button"><div class="button_bcg"></div><a href="form.php">New Accommodation<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
 				</div>
@@ -223,6 +223,14 @@
                 </div>
             </div>
         </div>
+    </div>
+
+	<div class="row offers_items">
+		<?php
+		if($_POST['submit']):
+			require_once "get_accommodations.php";
+		endif;
+		?>
     </div>
 
 
