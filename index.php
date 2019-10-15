@@ -34,7 +34,7 @@
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">home</a></li>
+								<li class="main_nav_item"><a href="index.php">home</a></li>
 								<li class="main_nav_item"><a href="about.html">about us</a></li>
 							</ul>
 						</div>
@@ -80,7 +80,7 @@
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="#">home</a></li>
+				<li class="menu_item"><a href="index.php">home</a></li>
 				<li class="menu_item"><a href="about.html">about us</a></li>
 				<li class="menu_item"><a href="offers.html">offers</a></li>
 				<li class="menu_item"><a href="blog.html">news</a></li>
@@ -108,7 +108,7 @@
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 							<h1>discover</h1>
 							<h1>the world</h1>
-							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+							<div class="button home_slider_button"><div class="button_bcg"></div><a href="form.php">New Accommodation<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
 				</div>
@@ -240,6 +240,13 @@
                             <input value="Search" name="submit" type ="submit" class="button search_button"/><span></span><span></span><span></span><br>
                         </form>
                     </div>
+                </div>
+                <div class="row offers_items">
+                    <?php
+                    if($_POST['submit']):
+                        require_once "get_accommodations.php";
+                    endif;
+                    ?>
                 </div>
 
             </div>
