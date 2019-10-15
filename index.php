@@ -226,13 +226,22 @@
     </div>
 
 
-	<div class="row offers_items">
-			<?php
-			if($_POST['submit']):
-				require_once "get_accommodations.php";
-			endif;
-			?>
-    </div>
+	<div class="offers">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="section_title">the best offers with rooms</h2>
+				</div>
+			</div>
+			<div class="row offers_items">
+				<?php
+				if($_POST['submit']):
+					require_once "get_accommodations.php";
+				endif;
+				?>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- CTA -->

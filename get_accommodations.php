@@ -77,6 +77,7 @@ if($_POST){
 }
 echo '<br>';
 $output = array_unique($output);
+
 if(sizeof($output) === 0) {
     echo '<h2 style="padding-left: 40%" class="section_title">No Results</h2>';
 } else {
