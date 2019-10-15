@@ -19,6 +19,26 @@
 :-include('Cities/Moscou.pl').
 :-include('Cities/Zurique.pl').
 
+
+:-dynamic image/3.
+:-dynamic bed_and_breakfast/3.
+:-dynamic one_s/3.
+:-dynamic two_s/3.
+:-dynamic three_s/3.
+:-dynamic bunjee_jumping/3.
+:-dynamic adv_safari/3.
+:-dynamic sunbathing/3.
+:-dynamic yoga/3.
+:-dynamic museums/3.
+:-dynamic s_safari/3.
+:-dynamic hiking/3.
+:-dynamic surfing/3.
+:-dynamic contact/3.
+:-dynamic beach/3.
+:-dynamic farm_land/3.
+:-dynamic national_park/3.
+:-dynamic town/3.
+
 %Accommodation
 accommodation(AC, CITY, Phone, Image) :-
     budget_accommodation(AC, CITY, Phone, Image);
