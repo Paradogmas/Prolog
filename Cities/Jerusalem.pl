@@ -2,7 +2,7 @@
 %Accommodation
 
 image('Mamilla Hotel', jerusalem, 'https://806d2bf04cf5fa54997a-e7c5344b3b84eec5da7b51276407b19c.ssl.cf1.rackcdn.com/responsive/1536/a3a80601ed9c61c5137a-e7c5344b3b84eec5da7b51276407b19c.r92.cf1.rackcdn.com/responsive/16:9/a3a80601ed9c61c5137a-e7c5344b3b84eec5da7b51276407b19c.r92.cf1.rackcdn.com/u/mamilla-hotel/rooms/executive/EXEC.jpg').
-image('Hebron Khan Hostel', jerusalem, 'https://thumbnails.trvl-media.com/DZrBmbHBJwCxul2CnAiEQLMkoi8=/582x388/smart/filters:quality(60)/images.trvl-media.com/hotels/37000000/36420000/36419800/36419708/3156f3ab_z.jpg').
+image('Hebron Khan Hostel', jerusalem, 'http://www.jerusalem-hotels.net/data/Photos/Large7/235/23598/23598303.JPEG').
 image('David Citadel Hotel', jerusalem, 'https://media.cntraveler.com/photos/53dac3d9dcd5888e145cb338/4:5/w_767,c_limit/david-citadel-hotel-jerusalem-jerusalem-israel-109854-1.jpg').
 image('Leonardo Plaza', jerusalem, 'https://www.leonardo-hotels.com.pt/octopus/upload/images/pages/leonardo-plaza-jerusalem-hotel-building-1-.jpg').
 
