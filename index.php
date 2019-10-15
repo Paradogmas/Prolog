@@ -172,7 +172,6 @@
                 <div class="col fill_height">
 
                     <!-- Search Tabs -->
-
                     <div class="search_tabs_container">
                         <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                             <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/backpack.png" alt="">accommodations</div>
@@ -182,7 +181,7 @@
                     </div>
 
                     <!-- Search Panel -->
-                    <div class="search_panel active" style="height: auto;">
+                    <div class="search_panel active">
                         <form method="POST" action="" id="search_form" class="search_panel_content flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<fieldset>
                                 <label style="font-size: 15px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">accommodations type<br></label><br>
@@ -204,18 +203,21 @@
 								<label style="background-color: #31124B; border: none" for="activity" class="btn btn-primary">Activity <input type="checkbox" name="relaxation" value="activity(X, Y, true)," id="activity" class="badgebox"><span class="badge">&check;</span></label>
                             </fieldset>
 
-
                             <fieldset>
                                 <label style="font-size: 15px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 14px;">destination<br></label><br>
-								<label style="background-color: #31124B; border: none" for="adventure" class="btn btn-primary">Adventure <input type="checkbox" name="adventure" value="adventure(X, Y, true)," id="adventure" class="badgebox"><span class="badge">&check;</span></label>								
-								<label style="background-color: #31124B; border: none" for="relaxation" class="btn btn-primary">Relaxation <input type="checkbox" name="relaxation" value="relaxation(X, Y)," id="relaxation"class="badgebox"><span class="badge">&check;</span></label>
-								<label style="background-color: #31124B; border: none" for="sightseeing" class="btn btn-primary">Sight Seeing <input type="checkbox" name="sightseeing" value="sightseeing(X, Y)," id="sightseeing" class="badgebox"><span class="badge">&check;</span></label>
-								<label style="background-color: #31124B; border: none" for="sports" class="btn btn-primary">Sports<input type="checkbox" name="relaxation" value="sports(X, Y)," id="sports" class="badgebox"><span class="badge">&check;</span></label>
-								<label style="background-color: #31124B; border: none" for="activity" class="btn btn-primary">Activity <input type="checkbox" name="relaxation" value="activity(X, Y, true)," id="activity" class="badgebox"><span class="badge">&check;</span></label>
-                            </fieldset>
+								<label style="background-color: #31124B; border: none" for="back_packers_destination" class="btn btn-primary">Backpackers Destination  <input type="checkbox" name="back_packers_destination" value="back_packers_destination(X, Y, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="budget_hotel_destination" class="btn btn-primary">Budget Hotel Destination <input type="checkbox" name="budget_hotel_destination" value="budget_hotel_destination(X, Y, true, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="family_destination" class="btn btn-primary">Family Destination  <input type="checkbox" name="family_destination" value="family_destination(X, Y, true, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="quiet_destination" class="btn btn-primary">Quiet Destination  <input type="checkbox" name="quiet_destination" value="quiet_destination(X, Y, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="retiree_destination" class="btn btn-primary">Retiree Destination  <input type="checkbox" name="retiree_destination" value="retiree_destination(X, Y, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="national_park" class="btn btn-primary">National Park <input type="checkbox" name="national_park" value="national_park(X, Y, Z, W)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="rural_area" class="btn btn-primary">Rural Area <input type="checkbox" name="rural_area" value="rural_area(X, Y, true)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="city" class="btn btn-primary">City <input type="checkbox" name="city" value="city(X, Y)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="capital" class="btn btn-primary">Capital <input type="checkbox" name="capital" value="capital(X, Y)," class="badgebox"><span class="badge">&check;</span></label>
+								<label style="background-color: #31124B; border: none" for="urban_area" class="btn btn-primary">Urban Area <input type="checkbox" name="urban_area" value="urban_area(X, Y)," class="badgebox"><span class="badge">&check;</span></label>
+							</fieldset>
 
-
-                            <input value="Search" name="submit" type ="submit" class="button search_button"/><span></span><span></span><span></span><br>
+                            <input value="Search" name="submit" type ="submit" class="button search_button"/>
 						</form>
                     </div>
                 </div>
