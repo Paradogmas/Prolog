@@ -1,92 +1,96 @@
-%Hotel Atlantis
 %Campsite Hook Farm
 %Hotel Seven Sisters
 %Accommodation
-hotel('Atlantis', true).
-hotel(seven_sisters, true).
-campsite(hook_farm, true).
+
+image('Seven Sisters', dubai, 'https://c8.alamy.com/comp/MHHM17/dukuza-south-africa-march-18-2018-entrance-to-the-manzini-fishing-and-camp-site-at-the-woodstock-dam-in-dukuza-MHHM17.jpg').
+image('Hook Farm', dubai, 'https://edge.media.datahc.com/HI110554953.jpg').
+image('The Savoy', dubai, 'https://q-xx.bstatic.com/xdata/images/hotel/max1000/182484172.jpg?k=417b46fba23737f7f2bacdbe4091bec64d104c2aecca54b78936e8b74f4d6a5a').
+
+hotel('Seven Sisters', dubai, true).
+campsite('Hook Farm', dubai, true).
+hotel('The Savoy', dubai, true).
+
 
 %AccommodationRating
-one_s(the_savoy, false).
-one_s(hook_farm, false).
-one_s(seven_sisters, false).
-two_s(the_savoy, false).
-two_s(hook_farm, false).
-two_s(seven_sisters, true).
-three_s(the_savoy, false).
-three_s(hook_farm, true).
-three_s(seven_sisters, false).
+one_s('The Savoy', dubai, false).
+one_s('Hook Farm', dubai, false).
+one_s('Seven Sisters', dubai, false).
+two_s('The Savoy', dubai, false).
+two_s('Hook Farm', dubai, false).
+two_s('Seven Sisters', dubai, true).
+three_s('The Savoy', dubai, false).
+three_s('Hook Farm', dubai, true).
+three_s('Seven Sisters', dubai, false).
 
 %Activity
 
 %Adventure
-bunjee_jumping(the_savoy, false).
-bunjee_jumping(seven_sisters, false).
-bunjee_jumping(hook_farm, false).
-adv_safari(the_savoy, false).
-adv_safari(hook_farm, false).
-adv_safari(seven_sisters, false).
+bunjee_jumping('The Savoy', dubai, false).
+bunjee_jumping('Seven Sisters', dubai, false).
+bunjee_jumping('Hook Farm', dubai, false).
+adv_safari('The Savoy', dubai, false).
+adv_safari('Hook Farm', dubai, false).
+adv_safari('Seven Sisters', dubai, false).
 
 %Relaxation
-sunbathing(the_savoy, true).
-sunbathing(hook_farm, true).
-sunbathing(seven_sisters, false).
-yoga(the_savoy, true).
-yoga(hook_farm, true).
-yoga(seven_sisters, false).
+sunbathing('The Savoy', dubai, true).
+sunbathing('Hook Farm', dubai, true).
+sunbathing('Seven Sisters', dubai, false).
+yoga('The Savoy', dubai, true).
+yoga('Hook Farm', dubai, true).
+yoga('Seven Sisters', dubai, false).
 
 %Sightseeing
-museums(the_savoy, true).
-museums(hook_farm, false).
-museums(seven_sisters, false).
-s_safari(the_savoy, false).
-s_safari(hook_farm, false).
-s_safari(seven_sisters, false).
-
+museums('The Savoy', dubai, true).
+museums('Hook Farm', dubai, false).
+museums('Seven Sisters', dubai, false).
+s_safari('The Savoy', dubai, false).
+s_safari('Hook Farm', dubai, false).
+s_safari('Seven Sisters', dubai, false).
 
 
 %Sports
-hiking(the_savoy, false).
-hiking(hook_farm, true).
-hiking(seven_sisters, true).
-surfing(the_savoy, false).
-surfing(hook_farm, false).
-surfing(seven_sisters, false).
+hiking('The Savoy', dubai, false).
+hiking('Hook Farm', dubai, true).
+hiking('Seven Sisters', dubai, true).
+surfing('The Savoy', dubai, false).
+surfing('Hook Farm', dubai, false).
+surfing('Seven Sisters', dubai, false).
 
 %Contact
-contact(the_savoy, true, "+44 20 3870 2583").
-contact(hook_farm, false, " ").
-contact(seven_sisters, false, " ").
+contact('The Savoy', dubai, true, '+44 20 3870 2583').
+contact('Hook Farm', dubai, false, '+44 20 3870 2583').
+contact('Seven Sisters', dubai, false, '+44 20 3870 2583').
 
 %Destination
-beach(the_savoy, false).
-beach(hook_farm, false).
-beach(seven_sisters, false).
-retiree_destination(seven_sisters, false).
-retiree_destination(the_savoy, true).
-retiree_destination(hook_farm, true).
+beach('The Savoy', dubai, false).
+beach('Hook Farm', dubai, false).
+beach('Seven Sisters', dubai, false).
+retiree_destination('Seven Sisters', dubai, false).
+retiree_destination('The Savoy', dubai, true).
+retiree_destination('Hook Farm', dubai, true).
 
 %RuralArea
-rural_area(the_savoy, false).
-rural_area(hook_farm, true).
-rural_area(seven_sisters, false).
+rural_area('The Savoy', dubai, false).
+rural_area('Hook Farm', dubai, true).
+rural_area('Seven Sisters', dubai, false).
 
 %FarmLand
-farm_land(the_savoy, false).
-farm_land(hook_farm, true).
-farm_land(seven_sisters, false).
+farm_land('The Savoy', dubai, false).
+farm_land('Hook Farm', dubai, true).
+farm_land('Seven Sisters', dubai, false).
 
 %NationalPark
-national_park(the_savoy, false).
-national_park(hook_farm, false).
-national_park(seven_sisters, false).
+national_park('The Savoy', dubai, false).
+national_park('Hook Farm', dubai, false).
+national_park('Seven Sisters', dubai, false).
 
 %UrbanArea
-capital(the_savoy, true).
-capital(hook_farm, true).
-capital(seven_sisters, true).
+capital('The Savoy', dubai, true).
+capital('Hook Farm', dubai, true).
+capital('Seven Sisters', dubai, true).
 
 %Town
-town(the_savoy, true).
-town(hook_farm, true).
-town(seven_sisters, true).
+town('The Savoy', dubai, true).
+town('Hook Farm', dubai, true).
+town('Seven Sisters', dubai, true).
