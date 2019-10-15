@@ -21,7 +21,9 @@ function translateName($local, $cidade) {
         'seul'=>'Seul - Coreia do Sul',
         'zurique'=>'Zurique - Suíça',
         'roma'=>'Roma - Itália',
-        'moscou'=>'Moscou - Rússia'
+        'moscou'=>'Moscou - Rússia',
+        'jerusalem'=>'Jerusálem - Israel',
+        'gramado'=>'Gramado - Brasil'
     );
     if($local !== 'Y')
         return $cities[$local];
