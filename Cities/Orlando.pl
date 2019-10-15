@@ -87,13 +87,13 @@ hiking('Parc Corniche Condominium Suites', orlando, true).
 surfing('Parc Corniche Condominium Suites', orlando, true).
 
 %Contact
-contact('Days Inn Orlando/international Drive', orlando, "+1 407-536-8949").
+contact('Days Inn Orlando/international Drive', orlando, '+1 407-536-8949').
 
-contact('Bill Frederick Park', orlando, "+1 407-246-4486").
+contact('Bill Frederick Park', orlando, '+1 407-246-4486').
 
-contact('Rosen Inn', orlando, "+1 407-996-4444").
+contact('Rosen Inn', orlando, '+1 407-996-4444').
 
-contact('Parc Corniche Condominium Suites', orlando, "+1 407-239-7100").
+contact('Parc Corniche Condominium Suites', orlando, '+1 407-239-7100').
 
 %Destination
 beach('Days Inn Orlando/international Drive', orlando, true).

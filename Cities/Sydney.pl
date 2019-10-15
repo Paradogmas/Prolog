@@ -86,13 +86,13 @@ hiking('Coogee Beachside Budget Accommodation',sydney, true).
 surfing('Coogee Beachside Budget Accommodation',sydney, true).
 
 %Contact
-contact('Megaboom City Hotel',sydney, "+614 2658-4288").
+contact('Megaboom City Hotel',sydney, '+614 2658-4288').
 
-contact('The Basin campground',sydney, "+614 2 3123 3131").
+contact('The Basin campground',sydney, '+614 2 3123 3131').
 
-contact('Sydney Harbour Bed & Breakfast',sydney, "+61 2 9247 1130").
+contact('Sydney Harbour Bed & Breakfast',sydney, '+61 2 9247 1130').
 
-contact('Coogee Beachside Budget Accommodation',sydney, "+61 2 9315 8511").
+contact('Coogee Beachside Budget Accommodation',sydney, '+61 2 9315 8511').
 
 %Destination
 beach('Megaboom City Hotel',sydney, true).

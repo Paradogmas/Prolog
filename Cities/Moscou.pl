@@ -83,13 +83,13 @@ hiking('Hyatt Regency Moscow Petrovsky Park', moscou, true).
 surfing('Hyatt Regency Moscow Petrovsky Park', moscou, false).
 
 %Contact
-contact('Pentahotel Moscow, Arbat', moscou, "+7 495 787-44-33").
+contact('Pentahotel Moscow, Arbat', moscou, '+7 495 787-44-33').
 
-contact('Palmira Business Club', moscou, "+7 499 551-88-03").
+contact('Palmira Business Club', moscou, '+7 499 551-88-03').
 
-contact('Pokrovskiy Dom', moscou, "+7 495 966-78-08.").
+contact('Pokrovskiy Dom', moscou, '+7 495 966-78-08.').
 
-contact('Hyatt Regency Moscow Petrovsky Park', moscou, "+7 495 479-12-34").
+contact('Hyatt Regency Moscow Petrovsky Park', moscou, '+7 495 479-12-34').
 
 %Destination
 beach('Pentahotel Moscow, Arbat', moscou, false).

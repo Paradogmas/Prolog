@@ -84,7 +84,6 @@ if(sizeof($output) === 0) {
     foreach ($output as $out) {
         $string = "123,46,78,000"; 
         $str_arr = explode ("'", $out); 
-        $cc_arr = explode ('"', $str_arr[2]);
         echo '
         <div class="col-lg-6 offers_col">
             <div class="offers_item">
@@ -92,7 +91,7 @@ if(sizeof($output) === 0) {
                     <div class="col-lg-6">
                         <div class="offers_image_container">
                             <!-- Image by https://unsplash.com/@kensuarez -->
-                            <div class="offers_image_background" style="background-image:url('.$str_arr[3].'"></div>
+                            <div class="offers_image_background" style="background-image:url('.$str_arr[5].'"></div>
                             <div class="offer_name"><a href="#">'.$str_arr[1].'</a></div>
                         </div>
                     </div>
@@ -106,8 +105,8 @@ if(sizeof($output) === 0) {
                                 <i></i>
                                 <i></i>
                             </div>
-                            <p class="offers_text">'.translateName($local, $cc_arr[0]).'</p>
-                            <p class="offers_text">'.contact($cc_arr[1]).'</p>
+                            <p class="offers_text">'.translateName($local, $str_arr[2]).'</p>
+                            <p class="offers_text">'.contact($str_arr[3]).'</p>
                             <div class="offers_icons">
                                 <ul class="offers_icons_list">
                                     <li class="offers_icons_item"><img src="images/post.png" alt=""></li>

@@ -86,13 +86,13 @@ hiking('Airport Inn And Suites',johannesburg, true).
 surfing('Airport Inn And Suites',johannesburg, true).
 
 %Contact
-contact('Manzini Fishing & Campsite',johannesburg, "+27 82 259 2028").
+contact('Manzini Fishing & Campsite',johannesburg, '+27 82 259 2028').
 
-contact('Reef Hotel',johannesburg, "+27 (0) 21 794 9050").
+contact('Reef Hotel',johannesburg, '+27 (0) 21 794 9050').
 
-contact('Chalet 4 Bluebell',johannesburg, "No contact").
+contact('Chalet 4 Bluebell',johannesburg, 'No contact').
 
-contact('Airport Inn And Suites',johannesburg, "+27 11 392 5722").
+contact('Airport Inn And Suites',johannesburg, '+27 11 392 5722').
 
 %Destination
 beach('Manzini Fishing & Campsite',johannesburg, false).

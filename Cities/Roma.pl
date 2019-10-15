@@ -83,13 +83,13 @@ hiking('Horti 14 Borgo Trastevere', roma, true).
 surfing('Horti 14 Borgo Trastevere', roma, false).
 
 %Contact
-contact('Princeps Boutique Hotel', roma, "+39 06 8781 1821").
+contact('Princeps Boutique Hotel', roma, '+39 06 8781 1821').
 
-contact('The Liberty Boutique Hotel', roma, "+39 06 495 9261").
+contact('The Liberty Boutique Hotel', roma, '+39 06 495 9261').
 
-contact('Rome Glam Hotel', roma, "+39 06 9934 5430").
+contact('Rome Glam Hotel', roma, '+39 06 9934 5430').
 
-contact('Horti 14 Borgo Trastevere', roma, "+39 06 6880 6289").
+contact('Horti 14 Borgo Trastevere', roma, '+39 06 6880 6289').
 
 %Destination
 beach('Princeps Boutique Hotel', roma, false).

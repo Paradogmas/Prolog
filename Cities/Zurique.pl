@@ -83,13 +83,13 @@ hiking('Atlantis by Giardino', zurique, true).
 surfing('Atlantis by Giardino', zurique, false).
 
 %Contact
-contact('Crowne Plaza Zürich', zurique, "+41 44 404 44 44").
+contact('Crowne Plaza Zürich', zurique, '+41 44 404 44 44').
 
-contact('Baur au Lac', zurique, "+41 44 220 50 20").
+contact('Baur au Lac', zurique, '+41 44 220 50 20').
 
-contact('Park Hyatt Zurich ', zurique, "+41 43 883 12 34").
+contact('Park Hyatt Zurich ', zurique, '+41 43 883 12 34').
 
-contact('Atlantis by Giardino', zurique, "+41 44 456 55 55").
+contact('Atlantis by Giardino', zurique, '+41 44 456 55 55').
 
 %Destination
 beach('Crowne Plaza Zürich', zurique, false).

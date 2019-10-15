@@ -86,13 +86,13 @@ hiking('Wish Serrano Resort & Convention Gramado', gramado, false).
 surfing('Wish Serrano Resort & Convention Gramado', gramado, false).
 
 %Contact
-contact('Hotel Casa da Montanha', gramado, "+55 (54) 3295-7575").
+contact('Hotel Casa da Montanha', gramado, '+55 (54) 3295-7575').
 
-contact('Pousada do Lago Gramado', gramado, "+55 (54) 3286-4762").
+contact('Pousada do Lago Gramado', gramado, '+55 (54) 3286-4762').
 
-contact('Camping Gramado', gramado, "+55 (54) 3286-2615").
+contact('Camping Gramado', gramado, '+55 (54) 3286-2615').
 
-contact('Wish Serrano Resort & Convention Gramado', gramado, "+55 (54) 3295-8000").
+contact('Wish Serrano Resort & Convention Gramado', gramado, '+55 (54) 3295-8000').
 
 %Destination
 beach('Hotel Casa da Montanha', gramado, false).

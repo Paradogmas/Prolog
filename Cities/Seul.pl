@@ -83,13 +83,13 @@ hiking('Four Points By Sheraton Seoul, Namsan', seul, true).
 surfing('Four Points By Sheraton Seoul, Namsan', seul, false).
 
 %Contact
-contact('Park Hyatt Seoul', seul, "+82 2 2016 1234").
+contact('Park Hyatt Seoul', seul, '+82 2 2016 1234').
 
-contact('THE PLAZA Seoul, Autograph Collection', seul, " +82 2-771-2200").
+contact('THE PLAZA Seoul, Autograph Collection', seul, ' +82 2-771-2200').
 
-contact('Stay Hotel Gangnam', seul, "+82 2-568-6200").
+contact('Stay Hotel Gangnam', seul, '+82 2-568-6200').
 
-contact('Four Points By Sheraton Seoul, Namsan', seul, "+82 2-6070-7000").
+contact('Four Points By Sheraton Seoul, Namsan', seul, '+82 2-6070-7000').
 
 %Destination
 beach('Park Hyatt Seoul', seul, false).

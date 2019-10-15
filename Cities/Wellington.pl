@@ -54,9 +54,9 @@ surfing('The Dwellington', wellington, true).
 surfing('Beautiful Colonial house', wellington, false).
 
 %Contact
-contact('The Marion Hostel', wellington, "+64 27 284 3887").
-contact('The Dwellington', wellington, "+64 4-550 9373").
-contact('Beautiful Colonial house', wellington, "").
+contact('The Marion Hostel', wellington, '+64 27 284 3887').
+contact('The Dwellington', wellington, '+64 4-550 9373').
+contact('Beautiful Colonial house', wellington, '').
 
 %Destination
 beach('The Marion Hostel', wellington, true).

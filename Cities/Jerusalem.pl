@@ -86,13 +86,13 @@ hiking('Leonardo Plaza', jerusalem, true).
 surfing('Leonardo Plaza', jerusalem, true).
 
 %Contact
-contact('Mamilla Hotel', jerusalem, "+972 2-548-2222").
+contact('Mamilla Hotel', jerusalem, '+972 2-548-2222').
 
-contact('Hebron Khan Hostel', jerusalem, "+972 2-628-1101").
+contact('Hebron Khan Hostel', jerusalem, '+972 2-628-1101').
 
-contact('David Citadel Hotel', jerusalem, "+972 2-621-1111").
+contact('David Citadel Hotel', jerusalem, '+972 2-621-1111').
 
-contact('Leonardo Plaza', jerusalem, "+972 2-629-8666").
+contact('Leonardo Plaza', jerusalem, '+972 2-629-8666').
 
 %Destination
 beach('Mamilla Hotel', jerusalem, true).

@@ -87,13 +87,13 @@ hiking('The Pierre', nova_york, false).
 surfing('The Pierre', nova_york, true).
 
 %Contact
-contact('Camp Gateway - Staten Island', nova_york, "+1 718-354-4655").
+contact('Camp Gateway - Staten Island', nova_york, '+1 718-354-4655').
 
-contact('Lotte New York Palace Hotel', nova_york, "+1 212-888-7000").
+contact('Lotte New York Palace Hotel', nova_york, '+1 212-888-7000').
 
-contact('The Park Ave North', nova_york, "+1 212-837-1207").
+contact('The Park Ave North', nova_york, '+1 212-837-1207').
 
-contact('The Pierre', nova_york, "+1 212-838-8000").
+contact('The Pierre', nova_york, '+1 212-838-8000').
 
 %Destination
 beach('Camp Gateway - Staten Island', nova_york, false).

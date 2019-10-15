@@ -87,13 +87,13 @@ hiking('Shonen Camping Ground', tokyo, true).
 surfing('Shonen Camping Ground', tokyo, false).
 
 %Contact
-contact('Shangri-La Hotel', tokyo, "shangri-la.com").
+contact('Shangri-La Hotel', tokyo, 'shangri-la.com').
 
-contact('Mokkoan Hotel', tokyo, "+81 3 3900 1001").
+contact('Mokkoan Hotel', tokyo, '+81 3 3900 1001').
 
-contact('ITABASHI-KU MOTOHASUNUMA', tokyo, "+81-3-5330-5250").
+contact('ITABASHI-KU MOTOHASUNUMA', tokyo, '+81-3-5330-5250').
 
-contact('Shonen Camping Ground', tokyo, "2345 Uchimodori, Fujisawa 252-0824 Kanagawa Prefecture - Only personally").
+contact('Shonen Camping Ground', tokyo, '2345 Uchimodori, Fujisawa 252-0824 Kanagawa Prefecture - Only personally').
 
 %Destination
 beach('Shangri-La Hotel', tokyo, false).

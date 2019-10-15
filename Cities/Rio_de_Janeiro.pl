@@ -86,13 +86,13 @@ hiking('Belmond Copacabana Palace', rio, true).
 surfing('Belmond Copacabana Palace', rio, true).
 
 %Contact
-contact('Apoteose', rio, "+55 (21) 3518-1137").
+contact('Apoteose', rio, '+55 (21) 3518-1137').
 
-contact('Villa Budget Hostel', rio, "+55 (21) 2256-8694").
+contact('Villa Budget Hostel', rio, '+55 (21) 2256-8694').
 
-contact('Camping Barra de Guaratiba', rio, "+55 (21) 98999-1490").
+contact('Camping Barra de Guaratiba', rio, '+55 (21) 98999-1490').
 
-contact('Belmond Copacabana Palace', rio, "+55 (21) 2548-7070").
+contact('Belmond Copacabana Palace', rio, '+55 (21) 2548-7070').
 
 %Destination
 beach('Apoteose', rio, true).

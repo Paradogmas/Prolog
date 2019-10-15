@@ -55,9 +55,9 @@ surfing('Hook Farm',london, false).
 surfing('Seven Sisters',london, false).
 
 %Contact
-contact('The Savoy',london, london, "+44 20 3870 2583").
-contact('Hook Farm',london, london, " ").
-contact('Seven Sisters',london, london, " ").
+contact('The Savoy',london, london, '+44 20 3870 2583').
+contact('Hook Farm',london, london, ' ').
+contact('Seven Sisters',london, london, ' ').
 
 %Destination
 beach('The Savoy',london, false).
