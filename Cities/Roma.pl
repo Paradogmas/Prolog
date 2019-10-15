@@ -4,12 +4,14 @@ image('The Liberty Boutique Hotel', roma, 'https://r-cf.bstatic.com/images/hotel
 image('Rome Glam Hotel', roma, 'https://r-cf.bstatic.com/images/hotel/max1024x768/203/203954007.jpg').
 image('Horti 14 Borgo Trastevere', roma, 'https://r-cf.bstatic.com/images/hotel/max1024x768/185/185415477.jpg').
 
+hotel('Princeps Boutique Hotel', roma, true).
+hotel('The Liberty Boutique Hotel', roma, true).
+hotel('Rome Glam Hotel', roma, true).
+hotel('Horti 14 Borgo Trastevere', roma, true).
+
 bed_and_breakfast('Princeps Boutique Hotel', roma, true).
-
 bed_and_breakfast('The Liberty Boutique Hotel', roma, false).
-
 bed_and_breakfast('Rome Glam Hotel', roma, true).
-
 bed_and_breakfast('Horti 14 Borgo Trastevere', roma, true).
 
 %AccommodationRating

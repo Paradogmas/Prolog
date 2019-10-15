@@ -4,12 +4,15 @@ image('Baur au Lac', zurique, 'https://q-cf.bstatic.com/images/hotel/max1024x768
 image('Park Hyatt Zurich ', zurique, 'https://q-cf.bstatic.com/images/hotel/max1024x768/140/140170115.jpg').
 image('Atlantis by Giardino', zurique, 'https://r-cf.bstatic.com/images/hotel/max1024x768/220/220651107.jpg').
 
+
+hotel('Crowne Plaza Zürich', zurique, true).
+hotel('Baur au Lac', zurique, true).
+hotel('Park Hyatt Zurich ', zurique, true).
+hotel('Atlantis by Giardino', zurique, true)
+
 bed_and_breakfast('Crowne Plaza Zürich', zurique, false).
-
 bed_and_breakfast('Baur au Lac', zurique, false).
-
 bed_and_breakfast('Park Hyatt Zurich ', zurique, false).
-
 bed_and_breakfast('Atlantis by Giardino', zurique, false).
 
 %AccommodationRating
