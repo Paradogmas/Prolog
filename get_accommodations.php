@@ -18,10 +18,10 @@ function translateName($local, $cidade) {
         'sydney'=>'Sydney - Austrália', 
         'tokyo'=>'Tóquio - Japão', 
         'wellington'=>'Wellington - Nova Zelândia',
-        'Seul'=>'Seul - Coreia do Sul',
-        'Zurique'=>'Zurique - Suíça',
-        'Roma'=>'Roma - Itália',
-        'Moscou'=>'Moscou - Rússia'
+        'seul'=>'Seul - Coreia do Sul',
+        'zurique'=>'Zurique - Suíça',
+        'roma'=>'Roma - Itália',
+        'moscou'=>'Moscou - Rússia'
     );
     if($local !== 'Y')
         return $cities[$local];
@@ -75,7 +75,7 @@ if($_POST){
 echo '<br>';
 $output = array_unique($output);
 if(sizeof($output) === 0) {
-    echo 'Sem resultados';
+    echo '<h2 style="padding-left: 40%" class="section_title">No Results</h2>';
 } else {
     foreach ($output as $out) {
         $string = "123,46,78,000"; 
@@ -94,7 +94,7 @@ if(sizeof($output) === 0) {
                     </div>
                     <div class="col-lg-6">
                         <div class="offers_content">
-                            <div class="offers_price">$70<span>per night</span></div>
+                            <div class="offers_price">$1000<span>per night</span></div>
                             <div class="rating_r rating_r_4 offers_rating">
                                 <i></i>
                                 <i></i>
