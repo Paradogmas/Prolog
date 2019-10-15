@@ -35,7 +35,7 @@
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
 								<li class="main_nav_item"><a href="#">home</a></li>
-								<li class="main_nav_item"><a href="about.php">about us</a></li>
+								<li class="main_nav_item"><a href="form.php">new accommodation</a></li>
 							</ul>
 						</div>
 
@@ -52,7 +52,7 @@
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="#">home</a></li>
-				<li class="menu_item"><a href="about.php">about us</a></li>
+				<li class="main_nav_item"><a href="form.php">new accommodation</a></li>
 			</ul>
 		</div>
 	</div>
