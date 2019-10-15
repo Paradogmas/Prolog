@@ -605,7 +605,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
 								<li class="footer_nav_item"><a href="#">home</a></li>
-								<li class="footer_nav_item"><a href="about.php">about us</a></li>
+								<li class="main_nav_item"><a href="form.php">new accommodation</a></li>
 							</ul>
 						</div>
 					</div>

@@ -35,7 +35,7 @@
                         <div class="main_nav_container ml-auto">
                             <ul class="main_nav_list">
                                 <li class="main_nav_item"><a href="index.php">home</a></li>
-                                <li class="main_nav_item"><a href="about.html">about us</a></li>
+                                <li class="main_nav_item"><a href="form.php">new accommodation</a></li>
                             </ul>
                         </div>
                         <div class="content_search ml-lg-0 ml-auto">
@@ -81,10 +81,7 @@
             <div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
             <ul>
                 <li class="menu_item"><a href="#">home</a></li>
-                <li class="menu_item"><a href="about.html">about us</a></li>
-                <li class="menu_item"><a href="offers.html">offers</a></li>
-                <li class="menu_item"><a href="blog.html">news</a></li>
-                <li class="menu_item"><a href="contact.html">contact</a></li>
+                <li class="main_nav_item"><a href="form.php">new accommodation</a></li>
             </ul>
         </div>
     </div>
@@ -533,7 +530,7 @@
                         <div class="footer_nav">
                             <ul class="footer_nav_list">
                                 <li class="footer_nav_item"><a href="index.php">home</a></li>
-                                <li class="footer_nav_item"><a href="about.php">about us</a></li>
+                                <li class="main_nav_item"><a href="form.php">new accommodation</a></li>
                             </ul>
                         </div>
                     </div>
