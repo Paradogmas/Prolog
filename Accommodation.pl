@@ -1,5 +1,38 @@
 %Turning off warnings
 :-style_check(-discontiguous).
+:- use_module(library(persistency)).
+
+:- persistent image(fact1:(any), any, any).
+:- persistent bed_and_breakfast(fact1:(any), any, any).
+
+:- persistent one_s(fact1:(any), any, any).
+:- persistent two_s(fact1:(any), any, any).
+:- persistent three_s(fact1:(any), any, any).
+
+:- persistent bunjee_jumping(fact1:(any), any, any).
+:- persistent adv_safari(fact1:(any), any, any).
+
+:- persistent sunbathing(fact1:(any), any, any).
+:- persistent yoga(fact1:(any), any, any).
+
+:- persistent museums(fact1:(any), any, any).
+:- persistent s_safari(fact1:(any), any, any).
+
+:- persistent hiking(fact1:(any), any, any).
+:- persistent surfing(fact1:(any), any, any).
+
+:- persistent contact(fact1:(any), any, any).
+:- persistent beach(fact1:(any), any, any).
+
+:- persistent farm_land(fact1:(any), any, any).
+:- persistent national_park(fact1:(any), any, any).
+:- persistent town(fact1:(any), any, any).
+
+:- initialization(init).
+
+init:-
+  absolute_file_name('fact.db', File, [access(write)]),
+  db_attach(File, []).
 
 
 :-include('Cities/Copenhagen.pl').
@@ -14,6 +47,30 @@
 :-include('Cities/Sydney.pl').
 :-include('Cities/Tokyo.pl').
 :-include('Cities/Wellington.pl').
+:-include('Cities/Seul.pl').
+:-include('Cities/Roma.pl').
+:-include('Cities/Moscou.pl').
+:-include('Cities/Zurique.pl').
+
+
+:-dynamic image/3.
+:-dynamic bed_and_breakfast/3.
+:-dynamic one_s/3.
+:-dynamic two_s/3.
+:-dynamic three_s/3.
+:-dynamic bunjee_jumping/3.
+:-dynamic adv_safari/3.
+:-dynamic sunbathing/3.
+:-dynamic yoga/3.
+:-dynamic museums/3.
+:-dynamic s_safari/3.
+:-dynamic hiking/3.
+:-dynamic surfing/3.
+:-dynamic contact/3.
+:-dynamic beach/3.
+:-dynamic farm_land/3.
+:-dynamic national_park/3.
+:-dynamic town/3.
 
 %Accommodation
 accommodation(AC, CITY, Phone, Image) :-

@@ -17,7 +17,11 @@ function translateName($local, $cidade) {
         'rio'=>'Rio de Janeiro - Brasil',
         'sydney'=>'Sydney - Austrália', 
         'tokyo'=>'Tóquio - Japão', 
-        'wellington'=>'Wellington - Nova Zelândia'
+        'wellington'=>'Wellington - Nova Zelândia',
+        'seul'=>'Seul - Coreia do Sul',
+        'zurique'=>'Zurique - Suíça',
+        'roma'=>'Roma - Itália',
+        'moscou'=>'Moscou - Rússia'
     );
     if($local !== 'Y')
         return $cities[$local];
@@ -54,6 +58,7 @@ if($_POST){
     $sightseeing = filter_input(INPUT_POST, 'sightseeing', FILTER_SANITIZE_STRING);
     $sports = filter_input(INPUT_POST, 'sports', FILTER_SANITIZE_STRING);
     $activity = filter_input(INPUT_POST, 'activity', FILTER_SANITIZE_STRING);
+    
     $back_packers_destination = filter_input(INPUT_POST, 'back_packers_destination', FILTER_SANITIZE_STRING);
     $budget_hotel_destination = filter_input(INPUT_POST, 'budget_hotel_destination', FILTER_SANITIZE_STRING);
     $family_destination = filter_input(INPUT_POST, 'family_destination', FILTER_SANITIZE_STRING);
@@ -71,7 +76,7 @@ if($_POST){
 echo '<br>';
 $output = array_unique($output);
 if(sizeof($output) === 0) {
-    echo 'Sem resultados';
+    echo '<h2 style="padding-left: 40%" class="section_title">No Results</h2>';
 } else {
     foreach ($output as $out) {
         $string = "123,46,78,000"; 
@@ -90,7 +95,7 @@ if(sizeof($output) === 0) {
                     </div>
                     <div class="col-lg-6">
                         <div class="offers_content">
-                            <div class="offers_price">$70<span>per night</span></div>
+                            <div class="offers_price">$1000<span>per night</span></div>
                             <div class="rating_r rating_r_4 offers_rating">
                                 <i></i>
                                 <i></i>
