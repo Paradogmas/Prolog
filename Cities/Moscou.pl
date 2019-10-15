@@ -4,11 +4,6 @@ image('Palmira Business Club', moscou, 'https://r-cf.bstatic.com/images/hotel/ma
 image('Pokrovskiy Dom', moscou, 'https://q-cf.bstatic.com/images/hotel/max1024x768/129/129356230.jpg').
 image('Hyatt Regency Moscow Petrovsky Park', moscou, 'https://r-cf.bstatic.com/images/hotel/max1024x768/187/187470276.jpg').
 
-hotel('Pentahotel Moscow, Arbat', moscou, true).
-hotel('Palmira Business Club', moscou, true).
-hotel('Pokrovskiy Dom', moscou, true).
-hotel('Hyatt Regency Moscow Petrovsky Park', moscou, true).
-
 
 bed_and_breakfast('Pentahotel Moscow, Arbat', moscou, true).
 bed_and_breakfast('Palmira Business Club', moscou, true).

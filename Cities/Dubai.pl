@@ -6,10 +6,6 @@ image('Seven Sisters', dubai, 'https://c8.alamy.com/comp/MHHM17/dukuza-south-afr
 image('Hook Farm', dubai, 'https://edge.media.datahc.com/HI110554953.jpg').
 image('The Savoy', dubai, 'https://q-xx.bstatic.com/xdata/images/hotel/max1000/182484172.jpg?k=417b46fba23737f7f2bacdbe4091bec64d104c2aecca54b78936e8b74f4d6a5a').
 
-hotel('Seven Sisters', dubai, true).
-campsite('Hook Farm', dubai, true).
-hotel('The Savoy', dubai, true).
-
 
 %AccommodationRating
 one_s('The Savoy', dubai, false).

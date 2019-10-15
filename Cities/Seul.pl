@@ -5,11 +5,6 @@ image('Stay Hotel Gangnam', seul, 'https://q-cf.bstatic.com/images/hotel/max1024
 image('Four Points By Sheraton Seoul, Namsan', seul, 'https://thumbnails.trvl-media.com/Mji5xhqxBXMc-ajPJn3wkZ6jcIg=/773x530/smart/filters:quality(60)/exp.cdn-hotels.com/hotels/11000000/10560000/10554500/10554498/be0038da_z.jpg').
 
 
-hotel('Park Hyatt Seoul', seul, true).
-hotel('THE PLAZA Seoul, Autograph Collection', seul, true).
-hotel('Stay Hotel Gangnam', seul, true).
-hotel('Four Points By Sheraton Seoul, Namsan', seul, true).
-
 bed_and_breakfast('Park Hyatt Seoul', seul, true).
 bed_and_breakfast('THE PLAZA Seoul, Autograph Collection', seul, true).
 bed_and_breakfast('Stay Hotel Gangnam', seul, false).

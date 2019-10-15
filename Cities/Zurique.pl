@@ -5,11 +5,6 @@ image('Park Hyatt Zurich ', zurique, 'https://q-cf.bstatic.com/images/hotel/max1
 image('Atlantis by Giardino', zurique, 'https://r-cf.bstatic.com/images/hotel/max1024x768/220/220651107.jpg').
 
 
-hotel('Crowne Plaza Zürich', zurique, true).
-hotel('Baur au Lac', zurique, true).
-hotel('Park Hyatt Zurich ', zurique, true).
-hotel('Atlantis by Giardino', zurique, true)
-
 bed_and_breakfast('Crowne Plaza Zürich', zurique, false).
 bed_and_breakfast('Baur au Lac', zurique, false).
 bed_and_breakfast('Park Hyatt Zurich ', zurique, false).
