@@ -1,5 +1,38 @@
 %Turning off warnings
 :-style_check(-discontiguous).
+:- use_module(library(persistency)).
+
+:- persistent image(fact1:(any), any, any).
+:- persistent bed_and_breakfast(fact1:(any), any, any).
+
+:- persistent one_s(fact1:(any), any, any).
+:- persistent two_s(fact1:(any), any, any).
+:- persistent three_s(fact1:(any), any, any).
+
+:- persistent bunjee_jumping(fact1:(any), any, any).
+:- persistent adv_safari(fact1:(any), any, any).
+
+:- persistent sunbathing(fact1:(any), any, any).
+:- persistent yoga(fact1:(any), any, any).
+
+:- persistent museums(fact1:(any), any, any).
+:- persistent s_safari(fact1:(any), any, any).
+
+:- persistent hiking(fact1:(any), any, any).
+:- persistent surfing(fact1:(any), any, any).
+
+:- persistent contact(fact1:(any), any, any).
+:- persistent beach(fact1:(any), any, any).
+
+:- persistent farm_land(fact1:(any), any, any).
+:- persistent national_park(fact1:(any), any, any).
+:- persistent town(fact1:(any), any, any).
+
+:- initialization(init).
+
+init:-
+  absolute_file_name('fact.db', File, [access(write)]),
+  db_attach(File, []).
 
 
 :-include('Cities/Copenhagen.pl').

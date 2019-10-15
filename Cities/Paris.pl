@@ -27,7 +27,7 @@ three_s('Petit nid montmartrois', paris, false).
 
 %Adventure
 
-bunjee_jumpmuseumsing('Le Bristol Paris', paris, false).
+bunjee_jumping('Le Bristol Paris', paris, false).
 bunjee_jumping('La Chambre du Marais', paris, false).
 bunjee_jumping('Petit nid montmartrois', paris, false).
 
