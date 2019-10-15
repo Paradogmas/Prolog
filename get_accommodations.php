@@ -58,6 +58,7 @@ if($_POST){
     $sightseeing = filter_input(INPUT_POST, 'sightseeing', FILTER_SANITIZE_STRING);
     $sports = filter_input(INPUT_POST, 'sports', FILTER_SANITIZE_STRING);
     $activity = filter_input(INPUT_POST, 'activity', FILTER_SANITIZE_STRING);
+    
     $back_packers_destination = filter_input(INPUT_POST, 'back_packers_destination', FILTER_SANITIZE_STRING);
     $budget_hotel_destination = filter_input(INPUT_POST, 'budget_hotel_destination', FILTER_SANITIZE_STRING);
     $family_destination = filter_input(INPUT_POST, 'family_destination', FILTER_SANITIZE_STRING);
